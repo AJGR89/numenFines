@@ -1,7 +1,11 @@
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div className="bg-red-500">
-      <h1>Proyecto React</h1>
+    <div className="flex flex-col">
+      <NavBar/>
+      <Footer/>
     </div>
   );
 }
