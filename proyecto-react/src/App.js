@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Support from "./components/Support";
-import SocialNetworks from "./components/SocialNetworks/SocialNetworks";
+import { socialmediaicons } from ".socialMedia"
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <NavBar/>
       <Support/>
       <Footer/>
-      <SocialNetworks/>
+      <socialmediaicons icons={socialmediaicons}/>
     </div>
   );
 }
