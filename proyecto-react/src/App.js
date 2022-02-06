@@ -7,15 +7,13 @@ import "@material-tailwind/react/tailwind.css";
 import InfoCards from "./components/InfoCards/InfoCards";
 import SocialNetworks from "./components/SocialNetworks/SocialNetworks";
 
-
-
 function App() {
   return (
-    <div className="container mt-8">
+    <div>
+      <EventOnClick/>
       <NavBar/>
       <InfoCards/>
-      <SocialNetworks/>
-      
+      <SocialNetworks/>      
     </div>
 
   );
