@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Support from "./components/Support";
+import Support from "./components/Support/Support";
 import EventOnClick from "./components/EventOnClick/EventOnClick";
 import InfoCard from "./components/InfoCard/InfoCard";
 import "@material-tailwind/react/tailwind.css";
@@ -12,6 +12,7 @@ function App() {
     <div>
       <EventOnClick/>
       <NavBar/>
+      <Support/>
       <InfoCards/>
       <SocialNetworks/>      
     </div>
