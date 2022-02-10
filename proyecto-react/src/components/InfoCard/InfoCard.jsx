@@ -1,43 +1,30 @@
 import React from "react";
-import Card from "@material-tailwind/react/Card";
-import CardImage from "@material-tailwind/react/CardImage";
-import CardBody from "@material-tailwind/react/CardBody";
-import CardFooter from "@material-tailwind/react/CardFooter";
-import H6 from "@material-tailwind/react/Heading6";
-import Paragraph from "@material-tailwind/react/Paragraph";
-import Button from "@material-tailwind/react/Button";
+// import Card from "@material-tailwind/react/Card";
+// import CardImage from "@material-tailwind/react/CardImage";
+// import CardBody from "@material-tailwind/react/CardBody";
+// import CardFooter from "@material-tailwind/react/CardFooter";
+// import H6 from "@material-tailwind/react/Heading6";
+// import Paragraph from "@material-tailwind/react/Paragraph";
+// import Button from "@material-tailwind/react/Button";
 
 // PREGUNTARLE A GUILLE
 
-const InfoCard = () => {
+const InfoCard = ({url,name,price}) => {
     return (
-        
-        <Card >
-            <img className="rounded-lg"
-                src="https://s3.sa-east-1.amazonaws.com/titulares.ar/wp-content/uploads/2021/08/01110236/Estados-de-EEUU-prohiben-las-PC-gamer-de-alta-gama.jpg"
-               
-            />
-
-            <CardBody>
-                <H6 color="gray">Card Title</H6>
-                <Paragraph color="gray">
-                    Don't be scared of the truth because we need to restart the human
-                    foundation in truth And I love you like Kanye loves Kanye I love
-                    Rick Owens’ bed design but the back is...
-                </Paragraph>
-            </CardBody>
-
-            <CardFooter>
-                <Button color="lightBlue" size="lg" ripple="light">
-                    Read More
-                </Button>
-            </CardFooter>
-        </Card>
+      <>
+        <div className="rounded-2xl border m-4 p-4 text-center bg-white">
+          <img className="object-fill h-24 w-48 p-0 m-0" src={url}/>
+          <h1 className="text-2xl">{name}</h1>
+          <h1 className="text-4xl">$ {price}</h1>
+          <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold m-2 py-2 px-5 rounded">
+          Comprar 
+        </button>
+        </div>
+      </>
     );
-}
+  };
 
 export default InfoCard;
 
 
 
-// HACER MAPEO inforcards
