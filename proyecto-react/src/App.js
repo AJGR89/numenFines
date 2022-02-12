@@ -11,6 +11,7 @@ import picture3 from "./assets/images/ssd.png"
 import picture4 from "./assets/images/orange.png"
 import graphics1 from "./assets/images/gtx1660.png"
 import graphics2 from "./assets/images/gtx3060.png"
+import Categories from "./components/Categories/Categories";
 
 
 
@@ -67,6 +68,8 @@ function App() {
       <NavBar/>
       <hr/>
       <Support/>
+      <hr/>
+      <Categories/>
       <hr/>
       <InfoCards textWhite="Now in " textViolet="sale" pictures={pictures}/>
       <hr/>
