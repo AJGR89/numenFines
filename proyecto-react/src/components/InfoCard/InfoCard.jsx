@@ -7,7 +7,6 @@ import React from "react";
 // import Paragraph from "@material-tailwind/react/Paragraph";
 // import Button from "@material-tailwind/react/Button";
 
-// PREGUNTARLE A GUILLE
 
 const InfoCard = ({url,name,price}) => {
     return (
@@ -17,7 +16,7 @@ const InfoCard = ({url,name,price}) => {
           <h1 className="text-2xl">{name}</h1>
           <h1 className="text-4xl">$ {price}</h1>
           <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold m-2 py-2 px-5 rounded">
-          Comprar 
+          Comprar
         </button>
         </div>
       </>

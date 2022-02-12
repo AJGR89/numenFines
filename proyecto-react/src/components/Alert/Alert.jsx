@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import swal from "sweetalert2";
 
-const EventOnClick = () => {
+const Alert = () => {
   const [visible, setVisible] = useState(true)
   const alerta = () => {
-    swal.fire("Good job!", "You clicked the button!", "success");
+    swal.fire("Good job", "You are Welcomen!", "success");
   };
   return (
     <>
       {visible && (
-        <div className="py-2 text-left bg-green-500">
+        <div className="py-2 hover:py-4 h-full text-center text-white bg-purple-600">
           <button
             onClick={() => {
-              setVisible(false);
+              setVisible(true);
               alerta();
             }}
           >
-            Ocultar Barra
+            <p class="text-lg ...">Free Delivery over $4000. Gift with Purchase over $1500 ...</p>
           </button>
         </div>
       )}
@@ -24,4 +24,4 @@ const EventOnClick = () => {
   );
 };
 
-export default EventOnClick;
+export default Alert;
