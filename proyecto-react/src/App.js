@@ -13,7 +13,6 @@ import picture4 from "./assets/images/orange.png"
 import graphics1 from "./assets/images/gtx1660.png"
 import graphics2 from "./assets/images/gtx3060.png"
 
-
 const pictures = [
   {
        url: picture1,
@@ -72,5 +71,7 @@ function App() {
 
   );
 }
+
+
 
 export default App;
