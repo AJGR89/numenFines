@@ -11,22 +11,30 @@ import {
 const SocialNetworks = () => {
   return (
     <div className="flex justify-center ...">
-      <FontAwesomeIcon
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer" rel="noOper" rel="noFollow">
+        <FontAwesomeIcon
         className="m-2 text-blue-500 text-5xl hover:text-blue-900 ..."
         icon={faFacebook}
       />
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer" rel="noOper" rel="noFollow">
       <FontAwesomeIcon
         className="m-2 text-blue-500 text-5xl hover:text-blue-900 ..."
         icon={faInstagram}
       />
+      </a>
+      <a href="#">
       <FontAwesomeIcon
         className="m-2 text-blue-500 text-5xl hover:text-blue-900 ..."
         icon={faTelegram}
       />
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noreferrer" rel="noOper" rel="noFollow">
       <FontAwesomeIcon
         className="m-2 text-blue-500 text-5xl hover:text-blue-900 ..."
         icon={faTwitter}
       />
+      </a>
     </div>
   );
 };

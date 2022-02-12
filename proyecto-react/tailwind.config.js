@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "banner-img": "url('/src/assets/images/fondowindows.jpg')",
+        "banner-img": "url('/src/assets/images/setup.jpg')",
       },
     },
   },

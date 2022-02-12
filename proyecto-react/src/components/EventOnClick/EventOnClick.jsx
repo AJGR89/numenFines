@@ -9,14 +9,15 @@ const EventOnClick = () => {
   return (
     <>
       {visible && (
-        <div className="py-2 text-left bg-green-500">
-          <button
+        <div className="py-2 bg-violet-900 text-white relative">
+          <h1 className= "flex justify-center">Free delivery over $4000. Free gift with purchase over $1500.</h1>
+          <button className=" absolute top-2 right-4"
             onClick={() => {
               setVisible(false);
               alerta();
             }}
           >
-            Ocultar Barra
+            X
           </button>
         </div>
       )}
