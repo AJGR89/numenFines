@@ -6,7 +6,7 @@ import H4 from "@material-tailwind/react/Heading4";
 const Support = () => {
   return (
     <>
-      <div className="flex flex-wrap content-center h-90 bg-banner-img h-96 bg-cover">
+      <div className="flex flex-wrap content-center h-96 bg-banner-img bg-cover">
         <div className="m-4 py-2 ">
           <h1 className="text-8xl text-gray-100">SUMMER SALE</h1>
           <h2 className="text-4xl text-gray-100">Up to 60% off</h2>
