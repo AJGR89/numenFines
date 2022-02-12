@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-      <div className="h-96 text-center md:justify-between bg-gray-400 m-8 ...">
+      <div className="h-96 text-center md:justify-between bg-gray-400 my -8 ...">
       <div class="grid grid-cols-6 grid-flow-col auto-cols-max">
       <div class="...">Logo
       </div>
