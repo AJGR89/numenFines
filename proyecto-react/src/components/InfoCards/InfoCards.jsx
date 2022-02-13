@@ -17,5 +17,4 @@ const InfoCards = ({ pictures, textWhite, textViolet }) => {
     </>
   );
 };
-
 export default InfoCards;

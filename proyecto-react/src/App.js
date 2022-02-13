@@ -12,8 +12,8 @@ import picture4 from "./assets/images/orange.png"
 import graphics1 from "./assets/images/gtx1660.png"
 import graphics2 from "./assets/images/gtx3060.png"
 import Categories from "./components/Categories/Categories";
-
-
+import Carousel from "./components/ComponentsCarousel/carousel";
+import Card from "./components/ComponentsCarousel/card";
 
 const pictures = [
   {
@@ -74,6 +74,12 @@ function App() {
       <InfoCards textWhite="Now in " textViolet="sale" pictures={pictures}/>
       <hr/>
       <InfoCards textWhite="Latest in " textViolet="graphics cards" pictures={graphics}/>
+      <hr/>
+      <div className='p-10'>
+        <div className='flex justify-center items-center gap-2 '>
+          <Carousel />
+        </div>
+      </div>
       <hr/>
       <SocialNetworks/>
       <hr/>
