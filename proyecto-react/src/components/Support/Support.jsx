@@ -1,7 +1,5 @@
 import React from "react";
 import Button from "@material-tailwind/react/Button";
-import H6 from "@material-tailwind/react/Heading6";
-import H4 from "@material-tailwind/react/Heading4";
 
 const Support = () => {
   return (
@@ -26,4 +24,3 @@ const Support = () => {
 };
 
 export default Support;
-
