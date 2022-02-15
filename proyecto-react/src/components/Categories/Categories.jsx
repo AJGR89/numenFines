@@ -2,7 +2,7 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <>
+    <div className="gap-4">
       <div className="flex flex-wrap gap-1 justify-center my-8 mx-0 sm:mx-6 ">
         <div className="flex justify-end rounded-0 sm:rounded-3xl bg-leds-img w-full sm:w-48 h-47 sm:h-96 bg-cover border-cyan-300 border-2 hover:animate-bounce">
           <a className="self-end text-white font-bold mr-4" href="#">
@@ -47,7 +47,7 @@ const Categories = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
