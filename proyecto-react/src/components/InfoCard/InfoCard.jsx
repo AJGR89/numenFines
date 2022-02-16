@@ -9,8 +9,14 @@ import React from "react";
 
 const InfoCard = ({ url, name, price }) => {
   return (
-    <>
-      <div className="rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-white border-double border-8 border-purple-700">
+    // <div className="absolute">
+    //   <div className=" flex relative rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-pink" >
+    //   <img className="object-fill h-24 w-48 p-0 m-0" src={url} />
+    //     <h1 className="text-2xl">{name}</h1>
+    //     <h1 className="text-4xl">$ {price}</h1>
+    //   </div>
+  <div>
+      <div className=" rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-white ">
         <img className="object-fill h-24 w-48 p-0 m-0" src={url} />
         <h1 className="text-2xl">{name}</h1>
         <h1 className="text-4xl">$ {price}</h1>
@@ -18,7 +24,7 @@ const InfoCard = ({ url, name, price }) => {
           Comprar
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
