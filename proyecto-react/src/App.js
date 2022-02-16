@@ -1,5 +1,4 @@
-import NavBar from "./components/NavBar/NavBar";
-// import Support from "./components/Support/Support";
+
 import Alert from "./components/Alert/Alert";
 import InfoCards from "./components/InfoCards/InfoCards";
 import Footer from "./components/Footer/Footer";
@@ -12,7 +11,7 @@ import graphics1 from "./assets/images/gtx1660.png";
 import graphics2 from "./assets/images/gtx3060.png";
 import Categories from "./components/Categories/Categories";
 import Carousel from "./components/Carousel/Carousel";
-import Marcas from "./components/Marcas/Marcas";
+import Brands from "./components/Brands/Brands";
 import CardBanner from "./components/CardBanner/CardBanner";
 
 
@@ -65,8 +64,6 @@ function App() {
   return (
     <div>
       <Alert />
-      <NavBar />
-      {/* <Support /> */}
       <CardBanner/>
       <Categories />
       <InfoCards textWhite="Now in " textViolet="sale" pictures={pictures} />
@@ -75,7 +72,7 @@ function App() {
         textViolet="graphics cards"
         pictures={graphics}
       />
-      <Marcas/>
+      <Brands/>
       <div className="p-10">
         <div className="flex justify-center items-center gap-2 ">
           <Carousel/>
