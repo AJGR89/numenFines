@@ -1,11 +1,36 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Card from "./card";
 import { initalState } from "./data";
 
 function Carousel() {
   const [cards, setCards] = useState(initalState);
+  const prevWidth = 0;
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      if(width < 640)
+      {
+        console.log("cambio a tamaño sm");
+      }
+      else if(width < 768)
+      {
+        console.log("cambio a tamaño md");
+      }
+      else
+      {
+        console.log("cambio a tamaño lg");
+      }
+    }
 
-  const handleLeftClick = (isLeft) => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  });
+
+  const handleLeftClick = () => {
     const prevState = [...cards];
     // find next inactive card index - top
     const nextCardIdx = prevState
@@ -64,7 +89,7 @@ function Carousel() {
         .filter((f) => f.active === true)
         .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
         .map((card, index) => (
-          <Card key={index} prop={card.text} />
+          <Card key={index} prop={card.url}/>
         ))}
       <div
         className="text-xl md:text-5xl cursor-pointer"

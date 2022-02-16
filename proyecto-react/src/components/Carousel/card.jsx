@@ -1,11 +1,6 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
 
-function Card({ prop }) {
-  const [editable, setEditable] = useState(false);
-  const handleClick = () => {
-    setEditable(!editable);
-  };
+function Card({ prop  }) {
   return (
     <div
       className="
@@ -17,26 +12,16 @@ function Card({ prop }) {
         drop-shadow-md
         rounded-md"
     >
-      <div onClick={handleClick} className="flex">
-        <div className={editable ? "opacity-0" : "opacity-800"}>{prop}</div>
-        <div className="text-sm cursor-pointer text-gray-500">
-          {editable ? "close | update" : "edit"}
-        </div>
+      <div className="flex">
+        
         <div>
-          <img
-            className="bg-cover"
-            src="https://www.muycomputer.com/wp-content/uploads/2020/01/RTX-2080-Ti.jpg"
-            alt="Placas de video"
-          ></img>
+        <img className="object-fill h-24 w-48 p-0 m-0" src={prop} />
+        {/* <h1> {text}</h1> */}
         </div>
-        <input
-          className="text-sm w-15 bg-slate-100"
-          type={!editable && "hidden"}
-          value={prop}
-        />
       </div>
     </div>
   );
+  
 }
 
 export default Card;
