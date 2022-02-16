@@ -14,6 +14,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Brands from "./components/Brands/Brands";
 import CardBanner from "./components/CardBanner/CardBanner";
 
+
 const pictures = [
   {
     url: picture1,
