@@ -15,9 +15,9 @@ const InfoCard = ({ url, name, price }) => {
     //     <h1 className="text-2xl">{name}</h1>
     //     <h1 className="text-4xl">$ {price}</h1>
     //   </div>
-  <div>
+    <div>
       <div className=" rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-white ">
-        <img className="object-fill h-24 w-48 p-0 m-0" src={url} />
+        <img className="object-fill h-24 w-48 p-0 m-0" src={url} alt="asda" />
         <h1 className="text-2xl">{name}</h1>
         <h1 className="text-4xl">$ {price}</h1>
         <button className="bg-purple-600 border-dotted border-4 border-fuchsia-600 hover:bg-black text-white font-bold m-2 py-2 px-5 rounded">

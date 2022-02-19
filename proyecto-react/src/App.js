@@ -1,5 +1,5 @@
-
 import Alert from "./components/Alert/Alert";
+import NavBar from "./components/NavBar/NavBar";
 import InfoCards from "./components/InfoCards/InfoCards";
 import Footer from "./components/Footer/Footer";
 import "@material-tailwind/react/tailwind.css";
@@ -13,7 +13,6 @@ import Categories from "./components/Categories/Categories";
 import Carousel from "./components/Carousel/Carousel";
 import Brands from "./components/Brands/Brands";
 import CardBanner from "./components/CardBanner/CardBanner";
-
 
 const pictures = [
   {
@@ -64,7 +63,8 @@ function App() {
   return (
     <div>
       <Alert />
-      <CardBanner/>
+      <NavBar />
+      <CardBanner />
       <Categories />
       <InfoCards textWhite="Now in " textViolet="sale" pictures={pictures} />
       <InfoCards
@@ -72,10 +72,10 @@ function App() {
         textViolet="graphics cards"
         pictures={graphics}
       />
-      <Brands/>
+      <Brands />
       <div className="p-10">
         <div className="flex justify-center items-center gap-2 ">
-          <Carousel/>
+          <Carousel />
         </div>
       </div>
       <Footer />
