@@ -1,27 +1,18 @@
 import React from "react";
-// import Card from "@material-tailwind/react/Card";
-// import CardImage from "@material-tailwind/react/CardImage";
-// import CardBody from "@material-tailwind/react/CardBody";
-// import CardFooter from "@material-tailwind/react/CardFooter";
-// import H6 from "@material-tailwind/react/Heading6";
-// import Paragraph from "@material-tailwind/react/Paragraph";
-// import Button from "@material-tailwind/react/Button";
 
 const InfoCard = ({ url, name, price }) => {
   return (
-    // <div className="absolute">
-    //   <div className=" flex relative rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-pink" >
-    //   <img className="object-fill h-24 w-48 p-0 m-0" src={url} />
-    //     <h1 className="text-2xl">{name}</h1>
-    //     <h1 className="text-4xl">$ {price}</h1>
-    //   </div>
-  <div>
-      <div className=" rounded-2xl rounded-tl-lg m-4 p-4 text-center bg-white ">
-        <img className="object-fill h-24 w-48 p-0 m-0" src={url} />
-        <h1 className="text-2xl">{name}</h1>
-        <h1 className="text-4xl">$ {price}</h1>
-        <button className="bg-purple-600 border-dotted border-4 border-fuchsia-600 hover:bg-black text-white font-bold m-2 py-2 px-5 rounded">
-          Comprar
+    <div>
+      <div className="rounded-2xl rounded-tl-lg m-4 p-4 text-center font-serif bg-white ">
+        <img
+          className="object-fill h-24 w-48 p-0 m-0"
+          src={url}
+          alt="images-cards"
+        />
+        <h2 className="text-2xl">{name}</h2>
+        <h1 className="text-3xl">$ {price}</h1>
+        <button className="bg-purple-600 border-dotted border-4 border-fuchsia-600 hover:bg-black text-white font-serif font-bold m-2 py-2 px-5 rounded">
+          Purchase
         </button>
       </div>
     </div>

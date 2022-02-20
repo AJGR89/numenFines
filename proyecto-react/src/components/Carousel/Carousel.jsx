@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./card";
 import { initalState } from "./data";
 
@@ -9,17 +9,11 @@ function Carousel() {
     function handleResize() {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      
-      if(width < 640)
-      {
+      if (width < 640) {
         console.log("cambio a tamaño sm");
-      }
-      else if(width < 768)
-      {
+      } else if (width < 768) {
         console.log("cambio a tamaño md");
-      }
-      else
-      {
+      } else {
         console.log("cambio a tamaño lg");
       }
     }
@@ -27,7 +21,7 @@ function Carousel() {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
-    }
+    };
   });
 
   const handleLeftClick = () => {
@@ -79,23 +73,25 @@ function Carousel() {
 
   return (
     <>
-      <div
-        className="flex text-xl md:text-5xl cursor-pointer"
-        onClick={() => handleLeftClick()}
-      >
-        {"<"}
-      </div>
-      {cards
-        .filter((f) => f.active === true)
-        .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-        .map((card, index) => (
-          <Card key={index} prop={card.url}/>
-        ))}
-      <div
-        className="text-xl md:text-5xl cursor-pointer"
-        onClick={() => handleRightClick()}
-      >
-        {">"}
+      <div className="flex flex-wrap p-10 items-center gap-2 sm:justify-between sm:justify-center sm:gap-4">
+        <div
+          className="text-xl md:text-5xl cursor-pointer text-white hover:text-fuchsia-500"
+          onClick={() => handleLeftClick()}
+        >
+          {"<"}
+        </div>
+        {cards
+          .filter((f) => f.active === true)
+          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
+          .map((card, index) => (
+            <Card key={index} prop={card.url} />
+          ))}
+        <div
+          className="text-xl md:text-5xl cursor-pointer text-white hover:text-fuchsia-500"
+          onClick={() => handleRightClick()}
+        >
+          {">"}
+        </div>
       </div>
     </>
   );
