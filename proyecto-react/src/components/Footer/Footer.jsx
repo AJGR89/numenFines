@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-wrap max-h-full gap-8 justify-center justify-evenly bg-contain bg-fondo-img p-0 m-0 text-white font-bold">
+    <div className="flex flex-wrap max-h-full gap-8 justify-center justify-evenly bg-contain bg-fondo-img p-0 m-0 text-white font-serif font-bold">
       <div>
         <a href="#">
           <img
