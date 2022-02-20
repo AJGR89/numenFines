@@ -1,4 +1,4 @@
-// inital data - dynamic data strutre works
+
 import item1 from "../../assets/images/gtx1660.png";
 import item2 from "../../assets/images/gtx3060.png";
 import item3 from "../../assets/images/orange.png";
