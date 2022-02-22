@@ -1,8 +1,23 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import iconCarro from "../../assets/images/navbar/carro.svg";
 import iconBorwse from "../../assets/images/navbar/buscar.svg";
 
 const NavBar = () => {
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    function handleResize() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      if (width > 640) {
+        setVisible(true);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
   return (
     <nav className="flex flex-wrap items-center gap-2 text-white font-serif bg-purple-500">
       <div className="flex items-center mx-2">
@@ -15,6 +30,7 @@ const NavBar = () => {
       </div>
       <div class="flex flex-grow flex-row-reverse mr-4 sm:hidden">
         <button
+        onClick={()=> setVisible(!visible)}
           id="boton"
           className="flex items-center px-3 py-2 border rounded text-teal-200 border-white hover:text-white hover:border-white"
         >
@@ -28,7 +44,7 @@ const NavBar = () => {
           </svg>
         </button>
       </div>
-      <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+      {visible && (<div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
         <div className="flex flex-col sm:flex-grow sm:flex-row">
           <a className="mx-2 text-xl text-center hover:font-bold">Pagina 1</a>
           <a className="mx-2 text-xl text-center hover:font-bold">Pagina 2</a>
@@ -66,7 +82,7 @@ const NavBar = () => {
             </svg>
           </a>
         </div>
-      </div>
+      </div>)}
     </nav>
   );
 };
