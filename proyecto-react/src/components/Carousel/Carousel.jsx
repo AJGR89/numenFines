@@ -90,7 +90,7 @@ function Carousel() {
     <>
       <div className="flex flex-wrap p-10 items-center gap-2 sm:justify-between sm:justify-center sm:gap-4">
         <div
-          className="text-xl md:text-5xl cursor-pointer text-white hover:text-fuchsia-500"
+          className="text-xl md:text-5xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleLeftClick()}
         >
           {"<"}
@@ -102,7 +102,7 @@ function Carousel() {
             <Card key={index} prop={card.url} />
           ))}
         <div
-          className="text-xl md:text-5xl cursor-pointer text-white hover:text-fuchsia-500"
+          className="text-xl md:text-5xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleRightClick()}
         >
           {">"}
