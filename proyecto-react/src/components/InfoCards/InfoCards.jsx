@@ -7,7 +7,7 @@ const InfoCards = ({ pictures, textWhite, textViolet }) => {
   ));
   return (
     <>
-      <h1 className="text-4xl text-center font-serif text-white">
+      <h1 className="text-4xl text-center mt-4 font-serif text-white">
         {textWhite}{" "}
         <span className="text-4xl text-center font-serif text-violet-900">
           {textViolet}

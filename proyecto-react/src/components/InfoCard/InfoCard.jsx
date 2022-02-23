@@ -11,7 +11,7 @@ const InfoCard = ({ url, name, price }) => {
         />
         <h2 className="text-2xl">{name}</h2>
         <h1 className="text-3xl">$ {price}</h1>
-        <button className="bg-purple-600 border-dotted border-4 border-fuchsia-600 hover:bg-black text-white font-serif font-bold m-2 py-2 px-5 rounded">
+        <button className="bg-purple-600 sm:border-dotted sm:border-4 sm:border-fuchsia-600 sm:hover:bg-black text-white font-serif m-2 py-2 px-5 rounded">
           Purchase
         </button>
       </div>
