@@ -46,37 +46,37 @@ const Footer = () => {
             <h2>Subscribe and receive the best promotions!</h2>
           </li>
         </ul>
-        <a href="https://es-la.facebook.com/">
+        <a target="_blank" href="https://es-la.facebook.com/">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faFacebook}
           />
         </a>
-        <a href="https://www.instagram.com">
+        <a target="_blank" href="https://www.instagram.com">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faInstagram}
           />
         </a>
-        <a href="https://twitter.com/">
+        <a target="_blank" href="https://twitter.com/">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faTwitter}
           />
         </a>
-        <a href="https://web.whatsapp.com/">
+        <a target="_blank" href="https://web.whatsapp.com/">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faWhatsapp}
           />
         </a>
-        <a href="https://www.messenger.com/">
+        <a target="_blank" href="https://www.messenger.com/">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faFacebookMessenger}
           />
         </a>
-        <a href="https://web.telegram.org/k/">
+        <a target="_blank" href="https://web.telegram.org/k/">
           <FontAwesomeIcon
             className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
             icon={faTelegram}
