@@ -3,16 +3,17 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "asd-img": "url('/src/assets/images/categories/setup.jpg')",
         "consoles-img": "url('/src/assets/images/categories/consoles.jpg')",
-        "Display-img": "url('/src/assets/images/categories/display.jpg')",
+        "display-img": "url('/src/assets/images/categories/display.jpg')",
         "leds-img": "url('/src/assets/images/categories/luces4.jpg')",
         "notebooks-img": "url('/src/assets/images/categories/notebooks.jpg')",
         "sound-img": "url('/src/assets/images/categories/sound.jpg')",
         "chairs-img": "url('/src/assets/images/categories/gaming chairs.jpg')",
         "mouse-img": "url('/src/assets/images/categories/mouse.jpg')",
         "fondo-img": "url('/src/assets/images/footer/hexagons.jpg')",
+        "fondosm-img": "url('/src/assets/images/footer/abstracto.jpg')",
         "banner-img": "url('/src/assets/images/banner/banner.jpg')",
+        "colors-img": "url('/src/assets/images/carousel/colors.jpg')",
       },
       spacing: {
         46: "11.5rem",

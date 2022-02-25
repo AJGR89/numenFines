@@ -1,9 +1,9 @@
-import item1 from "../../assets/images/carousel/gtx1660.png";
-import item2 from "../../assets/images/carousel/gtx3060.png";
-import item3 from "../../assets/images/carousel/orange.png";
-import item4 from "../../assets/images/carousel/ssd.png";
-import item5 from "../../assets/images/carousel/redragon.png";
-import item6 from "../../assets/images/carousel/z390.png";
+import item1 from "../../assets/images/carousel/mother.png";
+import item2 from "../../assets/images/carousel/placa.png";
+import item3 from "../../assets/images/carousel/gabinete.png";
+import item4 from "../../assets/images/carousel/teclado.png";
+import item5 from "../../assets/images/carousel/memorias.png";
+import item6 from "../../assets/images/carousel/accesorios.png";
 
 export const initalState = [
   { idx: 1, pos: 1, url: item1, active: true },

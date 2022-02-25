@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-wrap max-h-full gap-8 justify-center justify-evenly bg-contain sm:bg-fondo-img p-0 m-0 text-white font-bold">
+    <div className="flex flex-wrap max-h-full gap-8 justify-center sm:justify-evenly sm:bg-contain sm:bg-fondo-img sm:bg-repeat bg-fondosm-img p-0 m-0 text-white font-bold">
       <div>
         <a href="#">
           <img
-            className="h-20 mt-2 border-2 border-solid rounded-full animate-pulse border-cyan"
+            className="sm:h-16 h-14 mt-2 border-2 border-solid rounded-full sm:hover:animate-pulse hover:animate-none border-cyan"
             src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
             alt="logo asus"
           ></img>
@@ -86,9 +86,9 @@ const Footer = () => {
       <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
         <h2>Copyright © 2022 - GoldWar</h2>
         <img
-          className="h-28 mt-8"
-          src="https://indahaus.com.ar/wp-content/uploads/2020/02/footer_pay.jpg"
-          alt="GG"
+          className="h-full h-14 sm:h-14 mt-8"
+          src="https://latolderiaonline.com.ar/wp-content/themes/latolderia/source/img/data-fiscal.jpg"
+          alt="fiscal"
         ></img>
       </div>
     </div>
