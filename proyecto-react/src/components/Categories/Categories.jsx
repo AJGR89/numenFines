@@ -21,7 +21,7 @@ const Categories = () => {
           </span>
         </a>
         <a
-          className="flex justify-end sm:rounded-3xl bg-Display-img w-full sm:w-48 h-47 bg-cover bg-center border-cyan-300 sm:border-2"
+          className="flex justify-end sm:rounded-3xl bg-display-img w-full sm:w-48 h-47 bg-cover bg-center border-cyan-300 sm:border-2"
           href="#"
         >
           <span className="self-end font-bold mr-4 text-white sm:hover:text-fuchsia-500 sm:hover:animate-bounce">
