@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true);
@@ -45,6 +46,8 @@ const NavBar = () => {
       {visible && (
         <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
           <div className="flex flex-col sm:flex-grow sm:flex-row">
+          <Link className="mx-2 text-xl text-center hover:font-bold" to="/">Home</Link>
+          <Link className="mx-2 text-xl text-center hover:font-bold" to="/productos">Productos</Link>
             <a className="mx-2 text-xl text-center hover:font-bold">Pagina 1</a>
             <a className="mx-2 text-xl text-center hover:font-bold">Pagina 2</a>
             <a className="mx-2 text-xl text-center hover:font-bold">Pagina 3</a>
