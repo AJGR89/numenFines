@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
-// import iconCarro from "../../assets/images/navbar/carro.svg";
-// import iconBorwse from "../../assets/images/navbar/buscar.svg";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
-      const height = window.innerHeight;
-      if (width > 640) {
+      if (width > 361) {
         setVisible(true);
       }
+      return setVisible(false);
     }
 
     window.addEventListener("resize", handleResize);
@@ -19,7 +17,7 @@ const NavBar = () => {
     };
   });
   return (
-    <nav className="flex flex-wrap items-center gap-2 text-white font-serif bg-purple-500">
+    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-serif bg-purple-500">
       <div className="flex items-center mx-2">
         <img
           className="h-10 m-2 border-2 border-solid rounded-full border-cyan"
