@@ -12,7 +12,7 @@ export const Banner = () => {
             color="purple"
             size="lg"
             ripple="light"
-            className="text-white font-serif sm:w-16 w-32 mt-6 mx-28 sm:mx-14 rounded sm:hover:animate-pulse"
+            className="text-white font-serif sm:w-16 w-32 mt-6 mx-28 sm:mx-14 rounded sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
           >
             Shop
           </Button>
