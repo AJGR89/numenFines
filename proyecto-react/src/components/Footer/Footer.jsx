@@ -48,42 +48,42 @@ const Footer = () => {
         </ul>
         <a target="_blank" href="https://es-la.facebook.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faFacebook}
           />
         </a>
         <a target="_blank" href="https://www.instagram.com">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faInstagram}
           />
         </a>
         <a target="_blank" href="https://twitter.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faTwitter}
           />
         </a>
         <a target="_blank" href="https://web.whatsapp.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faWhatsapp}
           />
         </a>
         <a target="_blank" href="https://www.messenger.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faFacebookMessenger}
           />
         </a>
         <a target="_blank" href="https://web.telegram.org/k/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faTelegram}
           />
         </a>
       </div>
-      <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
+      <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300">
         <h2>Copyright © 2022 - GoldWar</h2>
         <img
           className="h-full h-14 sm:h-14 mt-8"
