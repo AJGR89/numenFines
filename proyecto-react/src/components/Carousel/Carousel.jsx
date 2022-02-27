@@ -9,7 +9,7 @@ function Carousel() {
     function handleResize() {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      if (width < 640) {
+      if (width < 362) {
         console.log("cambio a tamaño sm");
       } else if (width < 768) {
         console.log("cambio a tamaño md");
@@ -73,7 +73,7 @@ function Carousel() {
 
   return (
     <>
-      <div className="flex flex-wrap p-10 items-center gap-2 sm:justify-between sm:justify-center justify-evenly sm:gap-4">
+      <div className="flex grid-cols-1 sm:flex-wrap sm:p-10 p-2 items-center gap-2 sm:justify-between sm:justify-center justify-evenly sm:gap-4">
         <div
           className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleLeftClick()}
