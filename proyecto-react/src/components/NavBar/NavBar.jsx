@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
-      if (width > 361) {
-        setVisible(true);
+      if (width > 639) {
+        return setVisible(true);
+
       }
       return setVisible(false);
     }
@@ -19,8 +20,8 @@ const NavBar = () => {
   });
   return (
     <nav
-      // style={"z-index: 9999"}
-      className="flex flex-wrap sm:sticky sm:top-0 items-center gap-2 text-white font-serif bg-purple-500"
+      
+      className="flex flex-wrap sm:sticky sm:top-0 items-center gap-2 text-white font-serif bg-purple-500 z-50"
     >
       <div className="flex items-center mx-2">
         <img
@@ -30,7 +31,7 @@ const NavBar = () => {
         ></img>
         <p className="text-2xl">GoldWar</p>
       </div>
-      <div class="flex flex-grow flex-row-reverse mr-4 sm:hidden">
+      <div className="flex flex-grow flex-row-reverse mr-4 sm:hidden">
         <button
           onClick={() => setVisible(!visible)}
           id="boton"
@@ -58,9 +59,7 @@ const NavBar = () => {
             >
               Productos
             </Link>
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 1</a>
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 2</a>
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 3</a>
+            
             <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
               Buscar
             </a>
