@@ -14,6 +14,7 @@ module.exports = {
         "fondosm-img": "url('/src/assets/images/footer/abstracto.jpg')",
         "banner-img": "url('/src/assets/images/banner/banner.jpg')",
         "colors-img": "url('/src/assets/images/carousel/colors.jpg')",
+        "background-img": "url('/src/assets/images/products/background.jpg')",
       },
       spacing: {
         46: "11.5rem",
