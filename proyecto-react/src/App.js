@@ -4,12 +4,14 @@ import NavBar from "./components/NavBar/NavBar";
 import Banner from "./components/Banner/Banner";
 import Categories from "./components/Categories/Categories";
 import InfoCards from "./components/InfoCards/InfoCards";
-import picture1 from "./assets/images/carousel/redragon.png";
-import picture2 from "./assets/images/carousel/z390.png";
-import picture3 from "./assets/images/carousel/ssd.png";
-import picture4 from "./assets/images/carousel/orange.png";
-import graphics1 from "./assets/images/carousel/gtx1660.png";
-import graphics2 from "./assets/images/carousel/gtx3060.png";
+import picture1 from "./assets/images/carousel/teclado.png";
+import picture2 from "./assets/images/carousel/placa.png";
+import picture3 from "./assets/images/cards/pad.png";
+import picture4 from "./assets/images/carousel/mother.png";
+import graphics1 from "./assets/images/carousel/gabinete.png";
+import graphics2 from "./assets/images/cards/fuente.png";
+import graphics3 from "./assets/images/carousel/accesorios.png";
+import graphics4 from "./assets/images/carousel/memorias.png";
 import Brands from "./components/Brands/Brands";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
@@ -48,12 +50,12 @@ const graphics = [
     price: "193.999",
   },
   {
-    url: graphics1,
+    url: graphics3,
     name: "GTX 1660 SUPER",
     price: "200",
   },
   {
-    url: graphics2,
+    url: graphics4,
     name: "GTX 3060 TI",
     price: "325",
   },

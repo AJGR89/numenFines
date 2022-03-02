@@ -8,6 +8,7 @@ function Carousel() {
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
+<<<<<<< HEAD
       const prevState = initalState;
       let visibleCards = 1;
 
@@ -22,6 +23,15 @@ function Carousel() {
       else 
       {
         visibleCards = 3;
+=======
+      const height = window.innerHeight;
+      if (width < 362) {
+        console.log("cambio a tamaño sm");
+      } else if (width < 768) {
+        console.log("cambio a tamaño md");
+      } else {
+        console.log("cambio a tamaño lg");
+>>>>>>> main
       }
       prevState.forEach((card, index)=>{
         card.active = index > visibleCards? false:true;
@@ -88,9 +98,9 @@ function Carousel() {
 
   return (
     <>
-      <div className="flex flex-wrap p-10 items-center gap-2 sm:justify-between sm:justify-center sm:gap-4">
+      <div className="flex grid-cols-1 sm:flex-wrap sm:p-10 p-2 items-center gap-2 sm:justify-between sm:justify-center justify-evenly sm:gap-4">
         <div
-          className="text-xl md:text-5xl cursor-pointer text-white sm:hover:text-fuchsia-500"
+          className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleLeftClick()}
         >
           {"<"}
@@ -102,7 +112,7 @@ function Carousel() {
             <Card key={index} prop={card.url} />
           ))}
         <div
-          className="text-xl md:text-5xl cursor-pointer text-white sm:hover:text-fuchsia-500"
+          className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleRightClick()}
         >
           {">"}

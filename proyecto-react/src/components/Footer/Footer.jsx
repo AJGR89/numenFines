@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-wrap max-h-full gap-8 justify-center justify-evenly bg-contain sm:bg-fondo-img p-0 m-0 text-white font-bold">
+    <div className="flex flex-wrap max-h-full gap-8 justify-center sm:justify-evenly sm:bg-contain sm:bg-fondo-img sm:bg-repeat bg-fondosm-img p-0 m-0 text-white font-bold">
       <div>
         <a href="#">
           <img
-            className="h-20 mt-2 border-2 border-solid rounded-full animate-pulse border-cyan"
+            className="sm:h-16 h-14 mt-2 border-2 border-solid rounded-full sm:hover:animate-pulse hover:animate-none border-cyan"
             src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
             alt="logo asus"
           ></img>
@@ -46,39 +46,39 @@ const Footer = () => {
             <h2>Subscribe and receive the best promotions!</h2>
           </li>
         </ul>
-        <a href="https://es-la.facebook.com/">
+        <a target="_blank" href="https://es-la.facebook.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faFacebook}
           />
         </a>
-        <a href="https://www.instagram.com">
+        <a target="_blank" href="https://www.instagram.com">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faInstagram}
           />
         </a>
-        <a href="https://twitter.com/">
+        <a target="_blank" href="https://twitter.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faTwitter}
           />
         </a>
-        <a href="https://web.whatsapp.com/">
+        <a target="_blank" href="https://web.whatsapp.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faWhatsapp}
           />
         </a>
-        <a href="https://www.messenger.com/">
+        <a target="_blank" href="https://www.messenger.com/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faFacebookMessenger}
           />
         </a>
-        <a href="https://web.telegram.org/k/">
+        <a target="_blank" href="https://web.telegram.org/k/">
           <FontAwesomeIcon
-            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500"
+            className="m-2 text-4xl text-white sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
             icon={faTelegram}
           />
         </a>
@@ -86,9 +86,9 @@ const Footer = () => {
       <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
         <h2>Copyright © 2022 - GoldWar</h2>
         <img
-          className="h-28 mt-8"
-          src="https://indahaus.com.ar/wp-content/uploads/2020/02/footer_pay.jpg"
-          alt="GG"
+          className="h-full h-14 sm:h-14 mt-8"
+          src="https://latolderiaonline.com.ar/wp-content/themes/latolderia/source/img/data-fiscal.jpg"
+          alt="fiscal"
         ></img>
       </div>
     </div>

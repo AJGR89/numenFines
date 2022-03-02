@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
-// import iconCarro from "../../assets/images/navbar/carro.svg";
-// import iconBorwse from "../../assets/images/navbar/buscar.svg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
-      const height = window.innerHeight;
-      if (width > 640) {
-        setVisible(true);
+      if (width > 639) {
+        return setVisible(true);
       }
+      return setVisible(false);
     }
 
     window.addEventListener("resize", handleResize);
@@ -19,16 +18,16 @@ const NavBar = () => {
     };
   });
   return (
-    <nav className="flex flex-wrap items-center gap-2 text-white font-serif bg-purple-500">
+    <nav className="flex flex-wrap sm:sticky sm:top-0 items-center gap-2 text-white font-serif z-50 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
       <div className="flex items-center mx-2">
         <img
-          className="h-10 m-2 border-2 border-solid rounded-full border-cyan"
+          className="h-10 m-2 rounded-full border-cyan"
           src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
           alt="logo asus"
         ></img>
-        <p className="text-2xl">GoldWar</p>
+        <p className="text-2xl font-bold text-black">GoldWar</p>
       </div>
-      <div class="flex flex-grow flex-row-reverse mr-4 sm:hidden">
+      <div className="flex flex-grow flex-row-reverse mr-4 sm:hidden">
         <button
           onClick={() => setVisible(!visible)}
           id="boton"
@@ -47,14 +46,24 @@ const NavBar = () => {
       {visible && (
         <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
           <div className="flex flex-col sm:flex-grow sm:flex-row">
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 1</a>
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 2</a>
-            <a className="mx-2 text-xl text-center hover:font-bold">Pagina 3</a>
+            <Link
+              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+              to="/products"
+            >
+              Products
+            </Link>
+
             <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
-              Buscar
+              Search
             </a>
             <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
-              Carrito
+              Shopping Cart
             </a>
           </div>
           <div className="mr-5 hidden sm:flex">
@@ -66,7 +75,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 width="28"
                 height="28"
-                className="mx-2 fill-white"
+                className="mx-2 fill-white sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
               >
                 <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z" />
               </svg>
@@ -79,7 +88,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 width="28"
                 height="28"
-                className="mx-2 fill-white"
+                className="mx-2 fill-white sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
               >
                 <circle cx="7" cy="22" r="2" />
                 <circle cx="17" cy="22" r="2" />
