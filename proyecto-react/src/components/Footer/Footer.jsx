@@ -83,7 +83,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300">
+      <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
         <h2>Copyright © 2022 - GoldWar</h2>
         <img
           className="h-full h-14 sm:h-14 mt-8"

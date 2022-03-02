@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Productos from "./Pages/Productos";
+import Products from "./Pages/Products";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <Router>
         <Routes>
           <Route path="/" element={<App classname="bg-stone-900" />} />
-          <Route path="/productos" element={<Productos />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </Router>
     </>
