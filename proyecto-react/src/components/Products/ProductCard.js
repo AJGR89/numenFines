@@ -7,9 +7,9 @@ const ProductCard = ({ prod }) => {
     <li className="mr-4 m-6 p-6 rounded-2xl border-2 sm:hover:border-purple-700 sm:hover:bg-gradient-to-r from-black via-purple-900 to-black rounded-tl-lg">
       <button onClick={() => setShowModal(true)}>
         <img
-          className="h-24 w-48 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
-          src="https://m.media-amazon.com/images/I/51-FhVIYrVL.jpg"
-          alt="ads"
+          className="h-28 w-50 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
+          src={prod.img}
+          alt="images"
         />
       </button>
 

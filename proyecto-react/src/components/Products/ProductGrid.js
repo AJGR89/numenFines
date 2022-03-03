@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import products from "./products.json";
+import { products } from "./products";
 import NavBar from "../NavBar/NavBar";
 import ModalProd from "../Modal/ModalProd";
 
