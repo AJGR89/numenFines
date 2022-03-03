@@ -15,7 +15,7 @@ function Card({ prop }) {
       <div>
         <img className="h-24 w-48" src={prop} alt="images" />
       </div>
-      <p className="text-center font-serif sm:mt-8 text-base sm:hover:text-fuchsia-500">
+      <p className="text-center font-serif sm:mt-8 text-base sm:hover:font-bold sm:hover:text-fuchsia-500">
         See More
       </p>
     </div>
