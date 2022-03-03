@@ -18,7 +18,7 @@ const InfoCard = ({ url, name, price }) => {
       />
       <h2 className="text-2xl text-center">{name}</h2>
       <h1 className="text-3xl text-center">${price}</h1>
-      <button className="bg-purple-800 sm:border-4 sm:border-fuchsia-800 sm:hover:bg-black text-white font-serif m-2 py-2 rounded sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300">
+      <button className="bg-gradient-to-r from-purple-500 to-black sm:border-4 sm:border-fuchsia-800 text-white font-serif m-2 py-2 rounded sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300">
         Purchase
       </button>
     </div>

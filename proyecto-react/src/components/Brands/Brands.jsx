@@ -2,7 +2,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <div className="flex flex-wrap sm:h-60 sm:w-4/5 mt-4 mb-4 bg-gradient-to-r from-purple-900 to-fuchsia-900 justify-evenly items-center devide-x border-double border-purple-900 sm:border-4 sm:rounded-xl mx-auto bg-gradient-to-l sm:hover:bg-gradient-to-r from-rose-900 to-blue-500">
+    <div className="flex flex-wrap sm:h-60 sm:w-4/5 mt-4 mb-4 bg-gradient-to-r from-purple-500 to-black-200 bg-gradient-to-l justify-evenly items-center devide-x border-double border-purple-900 sm:border-4 sm:rounded-xl mx-auto sm:hover:bg-gradient-to-r sm:hover:from-purple-400 sm:hover:to-black">
       <img
         className="h-8 sm:h-8 md:h-16"
         src="https://logodownload.org/wp-content/uploads/2014/04/intel-logo-8.png"
