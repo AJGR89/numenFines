@@ -15,7 +15,7 @@ const Footer = () => {
       <div>
         <a href="#">
           <img
-            className="sm:h-16 h-14 mt-2 border-2 border-solid rounded-full sm:hover:animate-pulse hover:animate-none border-cyan"
+            className="sm:h-16 h-14 mt-2 border-2 rounded-full sm:hover:animate-pulse hover:animate-none border-purple-500"
             src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
             alt="logo asus"
           ></img>

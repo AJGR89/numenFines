@@ -98,7 +98,7 @@ function Carousel() {
 
   return (
     <>
-      <div className="flex grid-cols-1 sm:flex-wrap sm:p-10 p-2 items-center gap-2 sm:justify-between sm:justify-center justify-evenly sm:gap-4">
+      <div className="flex sm:p-10 p-2 items-center gap-1 sm:justify-between sm:justify-center sm:gap-4">
         <div
           className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
           onClick={() => handleLeftClick()}
