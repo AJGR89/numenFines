@@ -23,7 +23,7 @@ const ModalProd = ({ showModal, setShowModal, prod }) => {
               {/*body*/}
               <img
                 className="object-scale-down sm:ml-52 h-48 w-60"
-                src="https://m.media-amazon.com/images/I/51-FhVIYrVL.jpg"
+                src={prod.img}
                 alt={prod.title}
               />
 
