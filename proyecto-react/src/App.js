@@ -8,10 +8,10 @@ import picture1 from "./assets/images/cards/teclado.png";
 import picture2 from "./assets/images/cards/pad.png";
 import picture3 from "./assets/images/cards/monitor.png";
 import picture4 from "./assets/images/cards/fuente.png";
-// import graphics1 from "./assets/images/cards/.png";
-// import graphics2 from "./assets/images/cards/.png";
-// import graphics3 from "./assets/images/cards/.png";
-import graphics4 from "./assets/images/cards/placaAsus.jpg";
+import graphics1 from "./assets/images/cards/placaAorus.jpg";
+import graphics2 from "./assets/images/cards/placaMsi.jpg";
+import graphics3 from "./assets/images/cards/placaEVGA.png";
+import graphics4 from "./assets/images/cards/placaAsus.png";
 import Brands from "./components/Brands/Brands";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
@@ -39,24 +39,24 @@ const pictures = [
   },
 ];
 const graphics = [
-  // {
-  //   url: graphics1,
-  //   name: "GTX 1660 SUPER",
-  //   price: "140.000",
-  // },
-  // {
-  //   url: graphics2,
-  //   name: "GTX 3060 TI",
-  //   price: "170.000",
-  // },
-  // {
-  //   url: graphics3,
-  //   name: "GTX 1660 SUPER",
-  //   price: "200.000",
-  // },
+  {
+    url: graphics1,
+    name: "Aorus 3070 TI",
+    price: "670.000",
+  },
+  {
+    url: graphics2,
+    name: "MSI 3070 TI",
+    price: "600.000",
+  },
+  {
+    url: graphics3,
+    name: "EVGA 3070 TI",
+    price: "650.000",
+  },
   {
     url: graphics4,
-    name: "Asus Rog Strix",
+    name: "Asus 3090",
     price: "750.000",
   },
 ];
