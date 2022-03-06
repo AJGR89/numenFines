@@ -1,7 +1,7 @@
 import "@material-tailwind/react/tailwind.css";
 import Alert from "./components/Alert/Alert";
 import NavBar from "./components/NavBar/NavBar";
-import Banner from "./components/Banner/Banner";
+// import Banner from "./components/Banner/Banner";
 import Categories from "./components/Categories/Categories";
 import InfoCards from "./components/InfoCards/InfoCards";
 import picture1 from "./assets/images/cards/teclado.png";
@@ -15,6 +15,8 @@ import graphics4 from "./assets/images/cards/placaAsus.png";
 import Brands from "./components/Brands/Brands";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
+import Slider from "./components/Slider/Slider";
+import ImageAndText from "./components/TextAndImage/TextAndImage";
 
 const pictures = [
   {
@@ -66,7 +68,8 @@ function App() {
     <div>
       <Alert />
       <NavBar />
-      <Banner />
+      {/* <Banner /> */}
+      <Slider />
       <Categories />
       <InfoCards textWhite="Now in " textViolet="Sale" pictures={pictures} />
       <InfoCards
@@ -75,6 +78,7 @@ function App() {
         pictures={graphics}
       />
       <Brands />
+      <ImageAndText />
       <Carousel />
       <Footer />
     </div>
