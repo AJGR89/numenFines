@@ -16,7 +16,7 @@ import Brands from "./components/Brands/Brands";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import Slider from "./components/Slider/Slider";
-import ImageAndText from "./components/TextAndImage/TextAndImage";
+// import ImageAndText from "./components/TextAndImage/TextAndImage";
 
 const pictures = [
   {
@@ -78,7 +78,7 @@ function App() {
         pictures={graphics}
       />
       <Brands />
-      <ImageAndText />
+      {/* <ImageAndText /> */}
       <Carousel />
       <Footer />
     </div>
