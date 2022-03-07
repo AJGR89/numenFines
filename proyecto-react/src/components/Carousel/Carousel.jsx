@@ -16,7 +16,7 @@ export default function Slider() {
   console.log("slideArray", slideArray);
   return (
     <>
-       <Swiper
+      <Swiper
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -33,13 +33,13 @@ export default function Slider() {
         centeredSlides={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true
+          clickable: true,
         }}
         navigation={true}
-        modules={[ Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper justify "
       >
         {slideArray}

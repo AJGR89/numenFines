@@ -1,13 +1,8 @@
 import { TYPES } from "../actions/shoppingActions";
+import { products } from "../Products/products";
 
 export const shoppingInitialState = {
-  products: [
-    { id: 1, name: "Producto A", precio: 1000 },
-    { id: 2, name: "Producto B", precio: 2000 },
-    { id: 3, name: "Producto C", precio: 3000 },
-    { id: 4, name: "Producto D", precio: 4000 },
-    { id: 5, name: "Producto E", precio: 5000 },
-  ],
+  products: products,
   cart: [],
 };
 
@@ -52,6 +47,7 @@ export function shoppingReducer(state, action) {
           };
     }
     case TYPES.REMOVE_ALL_PRODUCT: {
+      console.log("in TYPES.REMOVE_ALL_PRODUCT");
       return {
         ...state,
         cart: state.cart.filter((item) => item.id !== action.payload),
