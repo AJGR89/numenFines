@@ -8,22 +8,6 @@ function Carousel() {
   useEffect(() => {
     function handleResize() {
       const width = window.innerWidth;
-<<<<<<< HEAD
-      const prevState = initalState;
-      let visibleCards = 1;
-
-      if (width < 768) 
-      {
-        visibleCards = 0;
-      } 
-      else if (width < 1024) 
-      {
-        visibleCards = 1;
-      } 
-      else 
-      {
-        visibleCards = 3;
-=======
       const height = window.innerHeight;
       if (width < 362) {
         console.log("cambio a tamaño sm");
@@ -31,7 +15,6 @@ function Carousel() {
         console.log("cambio a tamaño md");
       } else {
         console.log("cambio a tamaño lg");
->>>>>>> main
       }
       prevState.forEach((card, index)=>{
         card.active = index > visibleCards? false:true;

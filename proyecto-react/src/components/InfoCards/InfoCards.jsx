@@ -1,6 +1,5 @@
 import React from "react";
 import InfoCard from "../InfoCard/InfoCard";
-// import { pictures, graphics } from "./data";
 
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
   const tarjetas = pictures.map((card, index) => (

@@ -1,36 +1,13 @@
 import React from "react";
+import { brands } from "../../api/data-api";
 
 const Brands = () => {
+  const brandsArray = brands.map((el,index)=>
+    <img className="h-8 sm:h-12 md:h-20" src={el.url} alt={el.alt} />
+  );
   return (
     <div className="flex flex-wrap sm:h-60 sm:w-4/5 mt-4 mb-4 bg-gradient-to-r from-purple-500 to-black-200 bg-gradient-to-l justify-evenly items-center devide-x border-double border-purple-900 sm:border-4 sm:rounded-xl mx-auto sm:hover:bg-gradient-to-r sm:hover:from-purple-400 sm:hover:to-black">
-      <img
-        className="h-8 sm:h-8 md:h-16"
-        src="https://logodownload.org/wp-content/uploads/2014/04/intel-logo-8.png"
-        alt="INTEL"
-      />
-
-      <img
-        className="h-16 sm:h-16 md:h-32"
-        src="https://logos-marcas.com/wp-content/uploads/2020/11/Gigabyte-Logo.png"
-        alt="GIGABYTE"
-      />
-
-      <img
-        className="h-16 sm:h-16 md:h-32"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/HP_New_Logo_2D.svg/2048px-HP_New_Logo_2D.svg.png"
-        alt="HP"
-      />
-
-      <img
-        className="h-8 sm:h-8 md:h-16"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/2560px-AMD_Logo.svg.png"
-        alt="AMD"
-      />
-      <img
-        className="h-16 sm:h-16 md:h-32"
-        src="https://1000marcas.net/wp-content/uploads/2020/03/Logo-NVIDIA.png"
-        alt="NVIDIA"
-      />
+      {brandsArray}
     </div>
   );
 };
