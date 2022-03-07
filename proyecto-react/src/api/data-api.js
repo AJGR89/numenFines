@@ -14,6 +14,12 @@ import brand2 from "../assets/images/brands/Gigabyte-Logo.png";
 import brand3 from "../assets/images/brands/hp-logo.png";
 import brand4 from "../assets/images/brands/intel-logo-8.png";
 import brand5 from "../assets/images/brands/Logo-NVIDIA.png";
+import item1 from "../assets/images/carousel/mother.png";
+import item2 from "../assets/images/carousel/placa.png";
+import item3 from "../assets/images/carousel/gabinete.png";
+import item4 from "../assets/images/carousel/teclado.png";
+import item5 from "../assets/images/carousel/memorias.png";
+import item6 from "../assets/images/carousel/accesorios.png";
 
 export const pictures = [
   {
@@ -76,7 +82,7 @@ export const slides = [
   },
 ];
 
-export const brands= [
+export const brands = [
   {
     url: brand1,
     alt: "amd logo",
@@ -88,11 +94,39 @@ export const brands= [
   {
     url: brand3,
     alt: "hp logo",
-  },{
+  },
+  {
     url: brand4,
     alt: "intel logo",
-  },{
+  },
+  {
     url: brand5,
+    alt: "nvidia logo",
+  },
+];
+export const items = [
+  {
+    url: item1,
+    alt: "amd logo",
+  },
+  {
+    url: item2,
+    alt: "gigabyte logo",
+  },
+  {
+    url: item3,
+    alt: "hp logo",
+  },
+  {
+    url: item4,
+    alt: "intel logo",
+  },
+  {
+    url: item5,
+    alt: "nvidia logo",
+  },
+  {
+    url: item6,
     alt: "nvidia logo",
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 
 function Card({ prop }) {
+  const { url, alt } = prop;
   return (
     <div
       className="
@@ -13,7 +14,7 @@ function Card({ prop }) {
         "
     >
       <div>
-        <img className="h-24 w-48" src={prop} alt="images" />
+        <img className="object-cover h-24 w-48" src={url} alt={alt} />
       </div>
       <p className="text-center font-serif sm:mt-8 text-base sm:hover:font-bold sm:hover:text-fuchsia-500">
         See More
