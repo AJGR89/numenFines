@@ -16,6 +16,14 @@ function Carousel() {
       } else {
         console.log("cambio a tamaño lg");
       }
+      prevState.forEach((card, index)=>{
+        card.active = index > visibleCards? false:true;
+        
+      });
+      console.log(prevState)
+      setCards(prevState);
+      handleLeftClick();
+      handleRightClick();
     }
 
     window.addEventListener("resize", handleResize);
