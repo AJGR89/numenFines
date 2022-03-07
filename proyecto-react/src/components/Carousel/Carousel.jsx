@@ -1,100 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import { items } from "../../api/data-api";
 import Card from "./card";
-import { initalState } from "./data";
 
-function Carousel() {
-  const [cards, setCards] = useState(initalState);
-  const prevWidth = 0;
-  useEffect(() => {
-    function handleResize() {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-      if (width < 362) {
-        console.log("cambio a tamaño sm");
-      } else if (width < 768) {
-        console.log("cambio a tamaño md");
-      } else {
-        console.log("cambio a tamaño lg");
-      }
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
-  const handleLeftClick = () => {
-    const prevState = [...cards];
-    // find next inactive card index - top
-    const nextCardIdx = prevState
-      .filter((ft) => ft.active === true)
-      .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))[0].idx;
-    // reset
-    prevState.find((f) => f.active === false).active = true;
-    // update
-    prevState.find((f) => f.idx === nextCardIdx).active = false;
-    // maximize pos
-    prevState.find((f) => f.idx === nextCardIdx).pos =
-      Math.max.apply(
-        null,
-        prevState.map(function (o) {
-          return o.pos;
-        })
-      ) + 1;
-
-    // update state
-    setCards(prevState);
-  };
-
-  const handleRightClick = () => {
-    const prevState = [...cards];
-    // find next inactive card index - bottom
-    const nextCardIdx = prevState
-      .filter((ft) => ft.active === true)
-      .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-      .pop(1).idx;
-    // minimize pos
-    prevState.find((f) => f.active === false).pos =
-      Math.min.apply(
-        null,
-        prevState.map(function (o) {
-          return o.pos;
-        })
-      ) - 1;
-    // reset
-    prevState.find((f) => f.active === false).active = true;
-    // update
-    prevState.find((f) => f.idx === nextCardIdx).active = false;
-
-    // update state
-    setCards(prevState);
-  };
-
+export default function Slider() {
+  const slideArray = items.map((el, index) => (
+    <SwiperSlide>
+      <Card prop={el}></Card>
+    </SwiperSlide>
+  ));
+  console.log("slideArray", slideArray);
   return (
     <>
-      <div className="flex sm:p-10 p-2 items-center gap-1 sm:justify-between sm:justify-center sm:gap-4">
-        <div
-          className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
-          onClick={() => handleLeftClick()}
-        >
-          {"<"}
-        </div>
-        {cards
-          .filter((f) => f.active === true)
-          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-          .map((card, index) => (
-            <Card key={index} prop={card.url} />
-          ))}
-        <div
-          className="text-xl sm:text-4xl cursor-pointer text-white sm:hover:text-fuchsia-500"
-          onClick={() => handleRightClick()}
-        >
-          {">"}
-        </div>
-      </div>
+       <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
+        loop={true}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false
+        }}
+        pagination={{
+          clickable: true
+        }}
+        navigation={true}
+        modules={[ Autoplay, Pagination, Navigation]}
+        className="mySwiper justify "
+      >
+        {slideArray}
+      </Swiper>
     </>
   );
 }
-
-export default Carousel;

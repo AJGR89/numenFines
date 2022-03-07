@@ -62,9 +62,12 @@ const NavBar = () => {
             <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
               Search
             </a>
-            <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
+            <Link
+              className="mx-2 text-xl text-center hover:font-bold sm:hidden"
+              to="/carrito"
+            >
               Shopping Cart
-            </a>
+            </Link>
           </div>
           <div className="mr-5 hidden sm:flex">
             <a href="#">
@@ -80,7 +83,7 @@ const NavBar = () => {
                 <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z" />
               </svg>
             </a>
-            <a href="#">
+            <Link to="/carrito">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Isolation_Mode"
@@ -94,7 +97,7 @@ const NavBar = () => {
                 <circle cx="17" cy="22" r="2" />
                 <path d="M5.654,5,5.391,2.938A3.328,3.328,0,0,0,2.087,0H0V3H2.087a.331.331,0,0,1,.326.3l1.5,11.759A3.327,3.327,0,0,0,7.217,18H20.4L23.974,5ZM18.112,15H7.217a.329.329,0,0,1-.325-.3L6.037,8h14Z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       )}
