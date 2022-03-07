@@ -7,9 +7,8 @@ import Brands from "./components/Brands/Brands";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import Slider from "./components/Slider/Slider";
-import textAndImage from "./components/TextAndImage/TextAndImage";
 import TextAndImage from "./components/TextAndImage/TextAndImage";
-import {pictures,graphics} from "./api/data-api";
+import { pictures, graphics } from "./api/data-api";
 
 function App() {
   return (

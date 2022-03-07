@@ -7,8 +7,8 @@ import { TYPES } from "./actions/shoppingActions";
 import Product from "./Product";
 import CartItem from "./CartItem";
 
-const shoppingCart = () => {
-  const [state, dispatch] = { useReducer }(
+const ShoppingCart = () => {
+  const [state, dispatch] = useReducer(
     shoppingReducer,
     shoppingInitialState
   );
@@ -16,12 +16,13 @@ const shoppingCart = () => {
   const { products, cart } = state;
 
   const addToCart = (id) => {
+    console.log("add product", id);
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
   const deleteFromCart = (id, all = false) => {
     if (all) {
-      dispatch({ type: TYPES.REMOVE_ALL_PRODUCT });
+      dispatch({ type: TYPES.REMOVE_ALL_PRODUCT, payload: id});
     } else {
       dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
     }
@@ -35,7 +36,7 @@ const shoppingCart = () => {
     <>
       <h2>Carrito de Compras</h2>
       <h3>Productos</h3>
-      <div className="box grid-responsive">
+      <div className="">
         {products.map((product) => (
           <Product key={product.id} data={product} addToCart={addToCart} />
         ))}
@@ -47,7 +48,7 @@ const shoppingCart = () => {
         ))}
       </div>
       <br />
-      <button>Limpiar Carrito</button>
+      <button onClick={()=> clearCart()} >Limpiar Carrito</button>
       <div>
         {cart.map((item, index) => (
           <CartItem key={index} data={item} clearCart={clearCart} />
@@ -57,4 +58,4 @@ const shoppingCart = () => {
   );
 };
 
-export default shoppingCart;
+export default ShoppingCart;
