@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay} from "swiper";
 import { slides } from "../../api/data-api";
 
 export default function Slider() {
@@ -24,12 +24,17 @@ export default function Slider() {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper h-122 justify "
+        modules={[Pagination, Navigation, Autoplay]}
+        className="mySwiper h-122 justify  "
       >
         {slideArray}
       </Swiper>
