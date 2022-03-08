@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
         <h2>Copyright © 2022 - GoldWar</h2>
         <img
-          className="h-full h-14 mt-8"
+          className="h-14 mt-8"
           src="https://latolderiaonline.com.ar/wp-content/themes/latolderia/source/img/data-fiscal.jpg"
           alt="fiscal"
         ></img>

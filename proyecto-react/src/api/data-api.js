@@ -6,14 +6,17 @@ import graphics1 from "../assets/images/cards/placaAorus.jpg";
 import graphics2 from "../assets/images/cards/placaMsi.jpg";
 import graphics3 from "../assets/images/cards/placaEVGA.png";
 import graphics4 from "../assets/images/cards/placaAsus.png";
-import slide1 from "../assets/images/banner/pc-station.jpg";
-import slide3 from "../assets/images/banner/baner-msi2.png";
-import slide2 from "../assets/images/banner/mbz490.jpg";
-import brand1 from "../assets/images/brands/amd-logo.png";
-import brand2 from "../assets/images/brands/Gigabyte-Logo.png";
-import brand3 from "../assets/images/brands/hp-logo.png";
-import brand4 from "../assets/images/brands/intel-logo-8.png";
-import brand5 from "../assets/images/brands/Logo-NVIDIA.png";
+import slide1 from "../assets/images/banner/asus.jpg";
+import slide2 from "../assets/images/banner/msi.png";
+import slide3 from "../assets/images/banner/aorus.jpg";
+import slide4 from "../assets/images/banner/gygabite.jpg";
+import slide5 from "../assets/images/banner/amd.jpg";
+import slide6 from "../assets/images/banner/pc-station.jpg";
+import brand1 from "../assets/images/brands/alienware-logo.png";
+import brand2 from "../assets/images/brands/gigabyte-logo.png";
+import brand3 from "../assets/images/brands/aorus-logo.png";
+import brand4 from "../assets/images/brands/asus-logo.png";
+import brand5 from "../assets/images/brands/amd-logo.png";
 import item1 from "../assets/images/carousel/mother.png";
 import item2 from "../assets/images/carousel/placa.png";
 import item3 from "../assets/images/carousel/gabinete.png";
@@ -70,22 +73,34 @@ export const graphics = [
 export const slides = [
   {
     url: slide1,
-    alt: "setup",
+    alt: "asus",
   },
   {
     url: slide2,
-    alt: "mother board",
+    alt: "msi",
   },
   {
     url: slide3,
-    alt: "notebook",
+    alt: "aorus",
+  },
+  {
+    url: slide4,
+    alt: "gygabite",
+  },
+  {
+    url: slide5,
+    alt: "amd",
+  },
+  {
+    url: slide6,
+    alt: "pc-station",
   },
 ];
 
 export const brands = [
   {
     url: brand1,
-    alt: "amd logo",
+    alt: "alienware logo",
   },
   {
     url: brand2,
@@ -93,15 +108,15 @@ export const brands = [
   },
   {
     url: brand3,
-    alt: "hp logo",
+    alt: "aourus logo",
   },
   {
     url: brand4,
-    alt: "intel logo",
+    alt: "asus logo",
   },
   {
     url: brand5,
-    alt: "nvidia logo",
+    alt: "amd logo",
   },
 ];
 export const items = [

@@ -47,13 +47,13 @@ const NavBar = () => {
         <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
           <div className="flex flex-col sm:flex-grow sm:flex-row">
             <Link
-              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300 hover:underline"
               to="/"
             >
               Home
             </Link>
             <Link
-              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+              className="mx-2 text-xl text-center sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300 hover:underline"
               to="/products"
             >
               Products

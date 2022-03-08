@@ -24,23 +24,22 @@ export default function Slider() {
           768: {
             slidesPerView: 3,
           },
-          1024: {
-            slidesPerView: 4,
+          1200: {
+            slidesPerView: 5,
           },
         }}
         loop={true}
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={60}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper justify "
+        navigation={false}
+        modules={[Autoplay, Navigation]}
+        className="mySwiper sm:mx-8 mt-3 mb-3"
       >
         {slideArray}
       </Swiper>

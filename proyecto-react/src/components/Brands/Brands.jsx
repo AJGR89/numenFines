@@ -1,32 +1,54 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
+import { brands } from "../../api/data-api";
+
+export default function Slider() {
+  const slideArray = brands.map((el, index) => (
+    <SwiperSlide className="sm:mt-6 sm:mb-6">
+      {" "}
+      <img src={el.url} alt={el.alt} className="h-20 w-full sm:h-36" />{" "}
+    </SwiperSlide>
+  ));
+  console.log("slideArray", slideArray);
 const Brands = () => {
   const brandsArray = brands.map((el, index) => (
     <img className="h-8 sm:h-12 md:h-20" src={el.url} alt={el.alt} />
   ));
   return (
-    <div className=" sm:h-44 sm:w-4/5 mt-4 mb-4 bg-gradient-to-r from-violet-900 to-purple-900 bg-gradient-to-l sm:rounded-xl mx-auto flex items-center">
-      {/* <img
-        className="h-8 sm:h-8 md:h-16 fill-blue-500 ease-in duration-300"
-        src="https://logodownload.org/wp-content/uploads/2014/04/intel-logo-8.png"
-        alt="INTEL"
-      />
-
-      <svg
-        className="h-8 sm:h-8 md:h-16 fill-blue-500 ease-in duration-300"
-        height="1656"
-        viewBox="-1.305 -3.934 81.965 58.102"
-        width="2500"
-        xmlns="http://www.w3.org/2000/svg"
+    <>
+      <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+        }}
+        spaceBetween={60}
+        loop={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper bg-cover bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 border-purple-800 border-4 boder-double mt-4 mb-4 sm:mx-28 sm:rounded-2xl"
       >
+        {slideArray}
+      </Swiper>
+    </>
         <g fill="#0071c5">
           <path d="m78.676 15.258c-3.696-18.048-38.738-19.192-61.324-5.442v1.52c22.562-11.602 54.566-11.527 57.48 5.094.977 5.5-2.121 11.23-7.656 14.53v4.313c6.656-2.441 13.484-10.34 11.5-20.015m-41.056 31.59c-15.58 1.437-31.823-.828-34.1-13.004-1.114-6.004 1.625-12.371 5.253-16.328v-2.114c-6.535 5.73-10.078 12.985-8.035 21.551 2.606 10.992 16.543 17.215 37.82 15.149 8.422-.817 19.438-3.528 27.102-7.735v-5.976c-6.957 4.144-18.457 7.57-28.039 8.457" />
           <path d="m64.398 12.633h-4.085v18.195c0 2.133 1.03 3.988 4.085 4.285zm-48.652 6.644h-4.094l-.004 11.887c0 2.14 1.036 3.992 4.098 4.285zm-4.094-2.218h4.082v-3.875h-4.082zm28.563 18.203c-3.305 0-4.703-2.301-4.703-4.567v-15.785h4.047v4.363h3.05v3.274h-3.05v7.898c0 .926.437 1.438 1.402 1.438h1.648v3.379zm10.745-12.907c-1.386 0-2.448.715-2.901 1.676-.262.578-.36 1.031-.387 1.742h6.238c-.078-1.742-.867-3.418-2.95-3.418m-3.288 6.18c0 2.07 1.293 3.598 3.586 3.598 1.797 0 2.683-.5 3.722-1.528l2.504 2.387c-1.605 1.586-3.289 2.547-6.254 2.547-3.878 0-7.59-2.113-7.59-8.281 0-5.274 3.247-8.254 7.5-8.254 4.325 0 6.81 3.488 6.81 8.07v1.461h-10.279m-20.925-5.988c1.188 0 1.684.586 1.684 1.539v11.2h4.05v-11.225c0-2.273-1.21-4.78-4.77-4.78l-8.366-.005v16.008h4.05v-12.737z" />
@@ -155,6 +177,4 @@ const Brands = () => {
       </>
     </div>
   );
-};
-
-export default Brands;
+}
