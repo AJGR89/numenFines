@@ -1,5 +1,3 @@
-
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,12 +8,10 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
-
-
 const Brands = () => {
-  const brandsArray = brands.map((el,index)=>
+  const brandsArray = brands.map((el, index) => (
     <img className="h-8 sm:h-12 md:h-20" src={el.url} alt={el.alt} />
-  );
+  ));
   return (
     <div className=" sm:h-44 sm:w-4/5 mt-4 mb-4 bg-gradient-to-r from-violet-900 to-purple-900 bg-gradient-to-l sm:rounded-xl mx-auto flex items-center">
       {/* <img
@@ -70,10 +66,6 @@ const Brands = () => {
             delay: 1000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
           breakpoints={{
             "@0.00": {
