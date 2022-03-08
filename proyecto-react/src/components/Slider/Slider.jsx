@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation, Autoplay} from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 import { slides } from "../../api/data-api";
 
 export default function Slider() {
@@ -13,7 +13,7 @@ export default function Slider() {
       <img
         src={el.url}
         alt={el.alt}
-        className="object-cover h-121 w-full"
+        className="bg-cover sm:h-121 sm:w-full h-64"
       />{" "}
     </SwiperSlide>
   ));
@@ -32,9 +32,9 @@ export default function Slider() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper h-122 justify  "
+        navigation={false}
+        modules={[Pagination, Autoplay]}
+        className="mySwiper"
       >
         {slideArray}
       </Swiper>

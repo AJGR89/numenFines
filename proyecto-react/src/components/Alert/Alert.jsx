@@ -9,18 +9,14 @@ const Alert = () => {
   return (
     <>
       {visible && (
-        <div className=" text-center text-md text-white bg-purple-900 flex justify-center ">
-          <div className="text-center py-1 lg:px-4">
-            <span className="text-center sm:text-left flex-auto">
-              Free Delivery over $4000. Gift with Purchase over $1500
-            </span>
-          </div>
+        <div className="sm:flex flex-wrap justify-center text-center text-white bg-purple-900 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300">
+          <span>Free Delivery over $4000. Gift with Purchase over $1500</span>
           <button
             onClick={() => {
               setVisible(false);
               alerta();
             }}
-            className="text-left"
+            className="ml-2 hover:text-pink-500"
           >
             X
           </button>
