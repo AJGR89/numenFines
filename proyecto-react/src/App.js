@@ -13,6 +13,7 @@ import Categories from "./components/Categories/Categories";
 import Carousel from "./components/Carousel/Carousel";
 import Brands from "./components/Brands/Brands";
 import CardBanner from "./components/CardBanner/CardBanner";
+import InfoService from "./components/InfoService/InfoService";
 
 
 const pictures = [
@@ -74,9 +75,10 @@ function App() {
       />
       <Brands/>
       <div className="p-10">
-        <div className="flex justify-center items-center gap-2 ">
+        <div className="flex items-center justify-center gap-2 ">
           <Carousel/>
         </div>
+        <InfoService />
       </div>
       <Footer />
     </div>
