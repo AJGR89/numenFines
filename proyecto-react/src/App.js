@@ -1,76 +1,28 @@
-
-import Alert from "./components/Alert/Alert";
-import InfoCards from "./components/InfoCards/InfoCards";
-import Footer from "./components/Footer/Footer";
 import "@material-tailwind/react/tailwind.css";
-import picture1 from "./assets/images/treddragon.png";
-import picture2 from "./assets/images/z390.png";
-import picture3 from "./assets/images/ssd.png";
-import picture4 from "./assets/images/orange.png";
-import graphics1 from "./assets/images/gtx1660.png";
-import graphics2 from "./assets/images/gtx3060.png";
+import Alert from "./components/Alert/Alert";
+import NavBar from "./components/NavBar/NavBar";
+import Slider from "./components/Slider/Slider";
 import Categories from "./components/Categories/Categories";
-import Carousel from "./components/Carousel/Carousel";
+import InfoCards from "./components/InfoCards/InfoCards";
 import Brands from "./components/Brands/Brands";
-import CardBanner from "./components/CardBanner/CardBanner";
-import InfoService from "./components/InfoService/InfoService";
-
-
-const pictures = [
-  {
-    url: picture1,
-    name: "Teclado Redragon",
-    price: "999",
-  },
-  {
-    url: picture2,
-    name: "Mother Z390",
-    price: "1000",
-  },
-  {
-    url: picture3,
-    name: "Teclado Redragon",
-    price: "200",
-  },
-  {
-    url: picture4,
-    name: "Teclado Redragon",
-    price: "325",
-  },
-];
-const graphics = [
-  {
-    url: graphics1,
-    name: "GTX 1660 SUPER",
-    price: "999",
-  },
-  {
-    url: graphics2,
-    name: "GTX 3060 TI",
-    price: "1000",
-  },
-  {
-    url: graphics1,
-    name: "GTX 1660 SUPER",
-    price: "200",
-  },
-  {
-    url: graphics2,
-    name: "GTX 3060 TI",
-    price: "325",
-  },
-];
+import TextImage from "./components/TextImage/TextImage";
+import Carousel from "./components/Carousel/Carousel";
+import Footer from "./components/Footer/Footer";
+import { pictures, graphics } from "./api/data-api";
+import DataInforService from "./components/InfoService/DataInforService";
 
 function App() {
   return (
     <div>
       <Alert />
-      <CardBanner/>
+      <NavBar />
+      <Slider />
       <Categories />
-      <InfoCards textWhite="Now in " textViolet="sale" pictures={pictures} />
+      
+      <InfoCards textWhite="Now in " textViolet="Sale" pictures={pictures} />
       <InfoCards
         textWhite="Latest in "
-        textViolet="graphics cards"
+        textViolet="Graphics Cards"
         pictures={graphics}
       />
       <Brands/>
@@ -78,9 +30,14 @@ function App() {
         <div className="flex items-center justify-center gap-2 ">
           <Carousel/>
         </div>
-        <InfoService />
       </div>
+       
+      <Brands />
+      <TextImage />
+      <Carousel />
+      <DataInforService />
       <Footer />
+      
     </div>
   );
 }
