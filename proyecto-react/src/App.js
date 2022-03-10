@@ -18,26 +18,25 @@ function App() {
       <NavBar />
       <Slider />
       <Categories />
-      
+
       <InfoCards textWhite="Now in " textViolet="Sale" pictures={pictures} />
       <InfoCards
         textWhite="Latest in "
         textViolet="Graphics Cards"
         pictures={graphics}
       />
-      <Brands/>
+
+      {/* <Brands /> */}
+      <TextImage />
+      {/* <Carousel /> */}
+      <Brands />
       <div className="p-10">
         <div className="flex items-center justify-center gap-2 ">
-          <Carousel/>
+          <Carousel />
         </div>
       </div>
-       
-      <Brands />
-      <TextImage />
-      <Carousel />
       <DataInforService />
       <Footer />
-      
     </div>
   );
 }
