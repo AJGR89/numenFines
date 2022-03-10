@@ -13,7 +13,7 @@ import slide4 from "../assets/images/banner/gygabite.jpg";
 import slide5 from "../assets/images/banner/amd.jpg";
 import slide6 from "../assets/images/banner/pc-station.jpg";
 import brand1 from "../assets/images/brands/alienware-logo.png";
-import brand2 from "../assets/images/brands/gigabyte-Logo.png";
+import brand2 from "../assets/images/brands/gigabyte-logo.png";
 import brand3 from "../assets/images/brands/aorus-logo.png";
 import brand4 from "../assets/images/brands/asus-logo.png";
 import brand5 from "../assets/images/brands/amd-logo.png";
