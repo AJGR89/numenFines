@@ -17,6 +17,7 @@ function App() {
       <NavBar />
       <Slider />
       <Categories />
+      
       <InfoCards textWhite="Now in " textViolet="Sale" pictures={pictures} />
       <InfoCards
         textWhite="Latest in "
