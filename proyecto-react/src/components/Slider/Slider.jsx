@@ -32,8 +32,8 @@ export default function Slider() {
         pagination={{
           clickable: true,
         }}
-        navigation={false}
-        modules={[Pagination, Autoplay]}
+        navigation={true}
+        modules={[Pagination, Autoplay, Navigation]}
         className="mySwiper"
       >
         {slideArray}

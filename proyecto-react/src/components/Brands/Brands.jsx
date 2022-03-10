@@ -21,10 +21,10 @@ export default function Slider() {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1200: {
-            slidesPerView: 5,
+            slidesPerView: 3,
           },
         }}
         spaceBetween={60}
@@ -39,11 +39,10 @@ export default function Slider() {
         }}
         navigation={false}
         modules={[Pagination, Autoplay]}
-        className="mySwiper bg-cover bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 border-purple-800 border-4 boder-double mt-4 mb-4 sm:mx-28 sm:rounded-2xl"
+        className="mySwiper bg-contain bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 mt-4 mb-4 sm:mx-28 sm:rounded-2xl "
       >
         {slideArray}
       </Swiper>
     </>
   );
 }
-
