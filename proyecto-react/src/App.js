@@ -13,7 +13,7 @@ import DataInforService from "./components/InfoService/DataInforService";
 
 function App() {
   return (
-    <div>
+    <div className="font-sans">
       <Alert />
       <NavBar />
       <Slider />

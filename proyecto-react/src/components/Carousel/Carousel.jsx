@@ -30,14 +30,10 @@ export default function Slider() {
         }}
         loop={true}
         spaceBetween={60}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
         pagination={{
           clickable: false,
         }}
-        navigation={false}
+        navigation={true}
         modules={[Autoplay, Navigation]}
         className="mySwiper sm:mx-8 mt-3 mb-3"
       >

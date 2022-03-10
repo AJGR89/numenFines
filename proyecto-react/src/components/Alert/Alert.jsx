@@ -9,7 +9,7 @@ const Alert = () => {
   return (
     <>
       {visible && (
-        <div className="sm:flex flex-wrap justify-center text-center text-white bg-purple-900 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300">
+        <div className="sm:flex flex-wrap justify-center text-center text-white bg-purple-900 sm:ease-in-out sm:delay-80 ">
           <span>Free Delivery over $4000. Gift with Purchase over $1500</span>
           <button
             onClick={() => {

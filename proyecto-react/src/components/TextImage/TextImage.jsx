@@ -7,7 +7,7 @@ const TextAndImage = () => {
         <h1 className="text-2xl sm:text-3xl text-center font-bold">
           Intel® Iris® Xe MAX Graphics
         </h1>
-        <p className="text-center h-48 w-full sm:h-80 sm:w-120 sm:text-lg mt-4">
+        <p className="text-right h-48 w-full sm:h-80 sm:w-120 sm:text-lg mt-4">
           Unleash your creativity, unlocked by Intel® Iris® Xe MAX graphics.
           Optimized to pair with 11th Generation Intel® Core™ processors, you
           get even more performance and new capabilities for enhanced content
