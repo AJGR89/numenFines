@@ -9,6 +9,7 @@ import TextImage from "./components/TextImage/TextImage";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import { pictures, graphics } from "./api/data-api";
+import DataInforService from "./components/InfoService/DataInforService";
 
 function App() {
   return (
@@ -24,10 +25,19 @@ function App() {
         textViolet="Graphics Cards"
         pictures={graphics}
       />
+      <Brands/>
+      <div className="p-10">
+        <div className="flex items-center justify-center gap-2 ">
+          <Carousel/>
+        </div>
+      </div>
+       
       <Brands />
       <TextImage />
       <Carousel />
+      <DataInforService />
       <Footer />
+      
     </div>
   );
 }
