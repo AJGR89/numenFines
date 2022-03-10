@@ -18,7 +18,7 @@ const NavBar = () => {
     };
   });
   return (
-    <nav className="flex flex-wrap sm:sticky sm:top-0 items-center gap-2 text-white font-serif z-50 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
+    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-serif z-50 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
       <div className="flex items-center mx-2">
         <a href="/">
           <img
