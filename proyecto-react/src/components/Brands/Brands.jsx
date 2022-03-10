@@ -7,7 +7,7 @@ import { brands } from "../../api/data-api";
 
 export default function Slider() {
   const slideArray = brands.map((el, index) => (
-    <SwiperSlide className="sm:mt-6 sm:mb-6">
+    <SwiperSlide className="sm:mt-6 sm:mb-6 mt-8 mb-8">
       {" "}
       <img src={el.url} alt={el.alt} className="h-20 w-full sm:h-36" />{" "}
     </SwiperSlide>
@@ -39,7 +39,7 @@ export default function Slider() {
         }}
         navigation={false}
         modules={[Pagination, Autoplay]}
-        className="mySwiper bg-contain bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 mt-4 mb-4 sm:mx-28 sm:rounded-2xl "
+        className="mySwiper bg-contain bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 sm:mt-4 sm:mb-4 mt-8 sm:mx-28 sm:rounded-2xl"
       >
         {slideArray}
       </Swiper>

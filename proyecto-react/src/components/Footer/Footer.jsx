@@ -83,13 +83,24 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="text-white-700 text-center mt-2 mb-2 sm:hover:text-fuchsia-500">
-        <h2>Copyright © 2022 - GoldWar</h2>
-        <img
-          className="h-14 mt-8"
-          src="https://latolderiaonline.com.ar/wp-content/themes/latolderia/source/img/data-fiscal.jpg"
-          alt="fiscal"
-        ></img>
+      <div className="text-white-700 text-center mt-2 mb-2">
+        <a target="_blank" href="https://www.afip.gob.ar">
+          <img
+            className="h-14 mt-2 mb-4 mx-auto"
+            src="https://latolderiaonline.com.ar/wp-content/themes/latolderia/source/img/data-fiscal.jpg"
+            alt="fiscal"
+          ></img>
+        </a>
+        <a target="_blank" href="https://www.cace.org.ar">
+          <img
+            className="h-12 mt-2 mx-auto"
+            src="https://www.venex.com.ar/images/sello-cace-venex.png"
+            alt="Cace"
+          ></img>
+        </a>
+        <h2 className="mt-4 mx-auto sm:hover:text-fuchsia-500">
+          Copyright © 2022 - GoldWar
+        </h2>
       </div>
     </div>
   );

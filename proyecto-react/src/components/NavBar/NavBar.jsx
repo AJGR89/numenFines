@@ -20,11 +20,13 @@ const NavBar = () => {
   return (
     <nav className="flex flex-wrap sm:sticky sm:top-0 items-center gap-2 text-white font-serif z-50 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
       <div className="flex items-center mx-2">
-        <img
-          className="h-10 m-2 rounded-full border-cyan"
-          src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
-          alt="logo asus"
-        ></img>
+        <a href="/">
+          <img
+            className="h-10 m-2 rounded-full border-cyan"
+            src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
+            alt="logo asus"
+          ></img>
+        </a>
         <p className="text-2xl font-bold text-black">GoldWar</p>
       </div>
       <div className="flex flex-grow flex-row-reverse mr-4 sm:hidden">
@@ -59,18 +61,21 @@ const NavBar = () => {
               Products
             </Link>
 
-            <a className="mx-2 text-xl text-center hover:font-bold sm:hidden">
-              Search
-            </a>
             <Link
-              className="mx-2 text-xl text-center hover:font-bold sm:hidden"
-              to="/carrito"
+              to="/Products"
+              className="mx-2 text-xl text-center hover:font-bold sm:hidden hover:underline"
+            >
+              Search
+            </Link>
+            <Link
+              to="/Products"
+              className="mx-2 text-xl text-center hover:font-bold sm:hidden hover:underline"
             >
               Shopping Cart
             </Link>
           </div>
           <div className="mr-5 hidden sm:flex">
-            <a href="#">
+            <Link to="/Products">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Isolation_Mode"
@@ -82,7 +87,7 @@ const NavBar = () => {
               >
                 <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z" />
               </svg>
-            </a>
+            </Link>
             <Link to="/carrito">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

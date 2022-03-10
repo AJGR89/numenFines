@@ -1,10 +1,12 @@
 import React from "react";
 import InfoCard from "../InfoCard/InfoCard";
+import ModalProd from "../Modal/ModalProd";
 
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
   const tarjetas = pictures.map((card, index) => (
     <InfoCard url={card.url} name={card.name} price={card.price} key={index} />
   ));
+  <ModalProd />;
   return (
     <>
       <h1 className="text-4xl text-center mt-4 font-serif text-white">
