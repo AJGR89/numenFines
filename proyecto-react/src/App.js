@@ -10,8 +10,14 @@ import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import { pictures, graphics } from "./api/data-api";
 import DataInforService from "./components/InfoService/DataInforService";
+import { products } from "./components/Products/products";
 
 function App() {
+
+  const productsSale = products.filter((prod) => prod.id <= 4);
+  const productsLatest = products.filter((prod) => prod.id > 6);
+
+
   return (
     <div className="font-sans">
       <Alert />
@@ -19,11 +25,11 @@ function App() {
       <Slider />
       <Categories />
 
-      <InfoCards textWhite="Now in " textViolet="Sale" pictures={pictures} />
+      <InfoCards textWhite="Now in " textViolet="Sale" pictures={productsSale} />
       <InfoCards
         textWhite="Latest in "
         textViolet="Graphics Cards"
-        pictures={graphics}
+        pictures={productsLatest}
       />
 
       {/* <Brands /> */}
