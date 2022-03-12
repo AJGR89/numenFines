@@ -2,8 +2,8 @@ import picture1 from "../assets/images/cards/teclado.png";
 import picture2 from "../assets/images/cards/pad.png";
 import picture3 from "../assets/images/cards/monitor.png";
 import picture4 from "../assets/images/cards/fuente.png";
-import graphics1 from "../assets/images/cards/placaAorus.jpg";
-import graphics2 from "../assets/images/cards/placaMsi.jpg";
+import graphics1 from "../assets/images/cards/placaAorus.png";
+import graphics2 from "../assets/images/cards/placaMsi.png";
 import graphics3 from "../assets/images/cards/placaEVGA.png";
 import graphics4 from "../assets/images/cards/placaAsus.png";
 import slide1 from "../assets/images/banner/asus.jpg";
@@ -85,7 +85,7 @@ export const slides = [
   },
   {
     url: slide4,
-    alt: "gygabite",
+    alt: "gigabyte",
   },
   {
     url: slide5,
