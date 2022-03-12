@@ -1,5 +1,5 @@
 import React from "react";
-import InfoCard from "../InfoCard/InfoCard";
+
 import ModalProd from "../Modal/ModalProd";
 import ProductCard from "../Products/ProductCard";
 
