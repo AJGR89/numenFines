@@ -26,13 +26,9 @@ const InfoCard = ({ url, name, price }) => {
           add to cart
         </button>
       </button>
-      <ModalProd
-        showModal={showModal}
-        setShowModal={setShowModal}
-        prod={InfoCard}
-      />
+      
     </div>
-  );
+    );
 };
 
 export default InfoCard;
