@@ -1,13 +1,11 @@
 import React from "react";
-
-import ModalProd from "../Modal/ModalProd";
 import ProductCard from "../Products/ProductCard";
 
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
   const tarjetas = pictures.map((card) => (
     <ProductCard prod={card} key={card.id} viewHome={true} />
   ));
-  <ModalProd />;
+
   return (
     <>
       <h1 className="text-4xl text-center mt-4 font-serif text-white">
