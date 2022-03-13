@@ -58,7 +58,6 @@ const ProductCard = ({ prod, viewHome }) => {
         setShowModal={setShowModal}
         prod={prod}
       />
-      ;
     </div>
   );
 };
