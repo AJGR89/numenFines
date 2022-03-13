@@ -8,15 +8,12 @@ import Brands from "./components/Brands/Brands";
 import TextImage from "./components/TextImage/TextImage";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
-import { pictures, graphics } from "./api/data-api";
 import DataInforService from "./components/InfoService/DataInforService";
 import { products } from "./components/Products/products";
 
 function App() {
-
   const productsSale = products.filter((prod) => prod.id <= 4);
   const productsLatest = products.filter((prod) => prod.id > 6);
-
 
   return (
     <div className="font-sans">
@@ -25,16 +22,18 @@ function App() {
       <Slider />
       <Categories />
 
-      <InfoCards textWhite="Now in " textViolet="Sale" pictures={productsSale} />
+      <InfoCards
+        textWhite="Now in "
+        textViolet="Sale"
+        pictures={productsSale}
+      />
       <InfoCards
         textWhite="Latest in "
         textViolet="Graphics Cards"
         pictures={productsLatest}
       />
 
-      {/* <Brands /> */}
       <TextImage />
-      {/* <Carousel /> */}
       <Brands />
       <div className="p-10">
         <div className="flex items-center justify-center gap-2 ">

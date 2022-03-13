@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import ModalProd from "../Modal/ModalProd";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ prod, viewHome }) => {
   const [showModal, setShowModal] = useState(false);
@@ -34,12 +35,12 @@ const ProductCard = ({ prod, viewHome }) => {
     </li>
   ) : (
     <div className="flex flex-col justify-evenly text-right rounded-2xl rounded-tl-lg m-4 p-4 font-serif bg-white ">
-      <a href="#">
+      <Link to="/Products">
         <FontAwesomeIcon
           className="text-2xl text-amber-300 sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
           icon={faStar}
         />
-      </a>
+      </Link>
       <img
         className="object-fill h-24 w-48 p-0 m-0"
         src={prod.img}
