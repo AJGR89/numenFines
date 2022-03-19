@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import ProductCard from "../Products/ProductCard";
 
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
@@ -17,6 +18,9 @@ const InfoCards = ({ pictures, textWhite, textViolet }) => {
       <div className="flex flex-wrap font-serif justify-center gap-4">
         {" "}
         {tarjetas}{" "}
+      </div>
+      <div>
+        <Outlet />
       </div>
     </>
   );

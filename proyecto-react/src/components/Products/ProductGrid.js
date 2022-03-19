@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import { products } from "./products";
 import NavBar from "../NavBar/NavBar";
-
+import { Outlet } from "react-router-dom";
 
 const ProductGrid = () => {
   return (
@@ -17,6 +17,9 @@ const ProductGrid = () => {
             return <ProductCard key={prod.id} prod={prod} viewHome={false} />;
           })}
         </ul>
+        <div>
+          <Outlet />
+        </div>
       </main>
     </>
   );
