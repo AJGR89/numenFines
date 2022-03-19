@@ -1,10 +1,9 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-import ProductCard from "../Products/ProductCard";
+import CardsHome from "./CardsHome";
 
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
   const tarjetas = pictures.map((card) => (
-    <ProductCard prod={card} key={card.id} viewHome={true} />
+    <CardsHome prod={card} key={card.id} />
   ));
 
   return (
@@ -18,9 +17,6 @@ const InfoCards = ({ pictures, textWhite, textViolet }) => {
       <div className="flex flex-wrap font-serif justify-center gap-4">
         {" "}
         {tarjetas}{" "}
-      </div>
-      <div>
-        <Outlet />
       </div>
     </>
   );
