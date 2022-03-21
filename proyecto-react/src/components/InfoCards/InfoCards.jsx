@@ -1,9 +1,9 @@
 import React from "react";
-import ProductCard from "../Products/ProductCard";
+import CardsHome from "./CardsHome";
 
 const InfoCards = ({ pictures, textWhite, textViolet,addToCart }) => {
   const tarjetas = pictures.map((card) => (
-    <ProductCard prod={card} key={card.id} viewHome={true} addToCart={addToCart} />
+    <CardsHome prod={card} key={card.id} />
   ));
 
   return (

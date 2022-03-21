@@ -1,12 +1,7 @@
 import React, { useReducer } from "react";
 import ProductCard from "./ProductCard";
 import NavBar from "../NavBar/NavBar";
-import CartItem from "../CartItem";
-import { TYPES } from "../actions/shoppingActions";
-import {
-  shoppingInitialState,
-  shoppingReducer,
-} from "../../components/reducers/shoppingReducer";
+import { Outlet } from "react-router-dom";
 
 const ProductGrid = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
@@ -49,6 +44,9 @@ const ProductGrid = () => {
             );
           })}
         </ul>
+        <div>
+          <Outlet />
+        </div>
       </main>
       <div>
         <h3>Cart</h3>
