@@ -1,9 +1,9 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { products } from "../Products/products";
 import InfoCards from "./InfoCards";
 
-const InfoSale = () => {
+const InfoSale = ({ mostrarModal }) => {
+  console.log(mostrarModal);
   const productsSale = products.filter((prod) => prod.id <= 4);
   return (
     <>
@@ -11,10 +11,8 @@ const InfoSale = () => {
         textWhite="Now in "
         textViolet="Sale"
         pictures={productsSale}
+        mostrarModal={mostrarModal}
       />
-      <div>
-        <Outlet />
-      </div>
     </>
   );
 };

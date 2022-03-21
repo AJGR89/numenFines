@@ -1,9 +1,11 @@
 import React from "react";
 import CardsHome from "./CardsHome";
 
-const InfoCards = ({ pictures, textWhite, textViolet }) => {
+const InfoCards = ({ pictures, textWhite, textViolet, mostrarModal }) => {
+  console.log(mostrarModal);
+  console.log("infocard");
   const tarjetas = pictures.map((card) => (
-    <CardsHome prod={card} key={card.id} />
+    <CardsHome prod={card} key={card.id} mostrarModal={mostrarModal} />
   ));
 
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import ProductGrid from "../components/Products/ProductGrid";
 
-const Products = () => {
+const Products = ({ mostrarModal }) => {
   return (
     <>
-      <ProductGrid />
+      <ProductGrid mostrarModal={mostrarModal} />
     </>
   );
 };

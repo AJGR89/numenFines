@@ -4,7 +4,7 @@ import { products } from "./products";
 import NavBar from "../NavBar/NavBar";
 import { Outlet } from "react-router-dom";
 
-const ProductGrid = () => {
+const ProductGrid = ({ mostrarModal }) => {
   return (
     <>
       <NavBar />
@@ -14,7 +14,13 @@ const ProductGrid = () => {
       <main className="bg-gradient-to-r from-black via-purple-800 to-black">
         <ul className="sm:grid sm:grid-cols-2 sm:grid-rows-1 justify-evenly place-content-center gap-2 pt-2">
           {products.map((prod) => {
-            return <ProductCard key={prod.id} prod={prod} viewHome={false} />;
+            return (
+              <ProductCard
+                key={prod.id}
+                prod={prod}
+                mostrarModal={mostrarModal}
+              />
+            );
           })}
         </ul>
         <div>
