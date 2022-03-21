@@ -1,4 +1,3 @@
-import "@material-tailwind/react/tailwind.css";
 import Alert from "./components/Alert/Alert";
 import NavBar from "./components/NavBar/NavBar";
 import Slider from "./components/Slider/Slider";
@@ -10,6 +9,7 @@ import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import DataInforService from "./components/InfoService/DataInforService";
 import { products } from "./components/Products/products";
+// import { addToCart } from "./components/Products/ProductGrid";
 
 function App() {
   const productsSale = products.filter((prod) => prod.id <= 4);
@@ -26,11 +26,13 @@ function App() {
         textWhite="Now in "
         textViolet="Sale"
         pictures={productsSale}
+        // addToCart={addToCart}
       />
       <InfoCards
         textWhite="Latest in "
         textViolet="Graphics Cards"
         pictures={productsLatest}
+        // addToCart={addToCart}
       />
 
       <TextImage />

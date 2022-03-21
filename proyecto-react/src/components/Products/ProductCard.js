@@ -4,7 +4,7 @@ import { useState } from "react";
 import ModalProd from "../Modal/ModalProd";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ prod, viewHome }) => {
+const ProductCard = ({ prod, viewHome, addToCart }) => {
   const [showModal, setShowModal] = useState(false);
 
   return !viewHome ? (
@@ -31,6 +31,7 @@ const ProductCard = ({ prod, viewHome }) => {
         showModal={showModal}
         setShowModal={setShowModal}
         prod={prod}
+        addToCart={addToCart}
       />
     </li>
   ) : (
@@ -58,6 +59,7 @@ const ProductCard = ({ prod, viewHome }) => {
         showModal={showModal}
         setShowModal={setShowModal}
         prod={prod}
+        addToCart={addToCart}
       />
     </div>
   );

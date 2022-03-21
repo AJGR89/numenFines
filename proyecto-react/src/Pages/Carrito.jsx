@@ -5,7 +5,7 @@ import ShoppingCart from "../components/ShoppingCart";
 const Carrito = () => {
   return (
     <div>
-      <ShoppingCart />
+      <ShoppingCart/>
     </div>
   );
 };

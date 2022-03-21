@@ -1,9 +1,9 @@
 import React from "react";
 import ProductCard from "../Products/ProductCard";
 
-const InfoCards = ({ pictures, textWhite, textViolet }) => {
+const InfoCards = ({ pictures, textWhite, textViolet,addToCart }) => {
   const tarjetas = pictures.map((card) => (
-    <ProductCard prod={card} key={card.id} viewHome={true} />
+    <ProductCard prod={card} key={card.id} viewHome={true} addToCart={addToCart} />
   ));
 
   return (
