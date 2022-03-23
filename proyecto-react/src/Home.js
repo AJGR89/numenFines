@@ -6,6 +6,7 @@ import productReducer, {
 } from "./components/Carrito/ProductReducer";
 import { types } from "./components/Carrito/types";
 import ModalProd from "./components/Modal/ModalProd";
+import StoreProvider from "./components/Store/StoreContext";
 import Carrito from "./Pages/Carrito";
 import Products from "./Pages/Products";
 
@@ -28,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <StoreProvider>
       <Router>
         <Routes>
           <Route
@@ -49,7 +50,7 @@ const Home = () => {
         setShowModal={setShowModal}
         prod={activeProduct}
       />
-    </>
+    </StoreProvider>
   );
 };
 

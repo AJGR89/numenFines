@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import ModalProd from "../Modal/ModalProd";
+import { StoreContext } from "../Store/StoreContext";
 import CardsHome from "./CardsHome";
 
 const InfoCards = ({ pictures, textWhite, textViolet, mostrarModal }) => {
+  const [state, dispach] = useContext(StoreContext);
+  const { showModal, activeProduct } = state;
   console.log(mostrarModal);
   console.log("infocard");
   const tarjetas = pictures.map((card) => (
-    <CardsHome prod={card} key={card.id} mostrarModal={mostrarModal} />
+    <CardsHome prod={card} key={card.id} dispach={dispach} />
   ));
 
   return (
@@ -20,6 +24,7 @@ const InfoCards = ({ pictures, textWhite, textViolet, mostrarModal }) => {
         {" "}
         {tarjetas}{" "}
       </div>
+      <ModalProd showModal={showModal} dispach={dispach} prod={activeProduct} />
     </>
   );
 };

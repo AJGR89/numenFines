@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { StoreContext } from "../Store/StoreContext";
+
 const ProductCard = ({ prod, mostrarModal }) => {
+  const [state, dispach] = useContext(StoreContext)
+
   return (
     <div>
       <li className="flex flex-wrap sm:items-start items-center justify-evenly m-4 p-4 rounded-2xl border-2 sm:hover:border-purple-700 sm:hover:bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
