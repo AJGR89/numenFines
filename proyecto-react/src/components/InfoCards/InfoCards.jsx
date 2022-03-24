@@ -3,14 +3,10 @@ import ModalProd from "../Modal/ModalProd";
 import { StoreContext } from "../Store/StoreContext";
 import CardsHome from "./CardsHome";
 
-<<<<<<< HEAD
-const InfoCards = ({ pictures, textWhite, textViolet,addToCart }) => {
-=======
 const InfoCards = ({ pictures, textWhite, textViolet }) => {
   const [state, dispach] = useContext(StoreContext);
   const { showModal, activeProduct } = state;
 
->>>>>>> main
   const tarjetas = pictures.map((card) => (
     <CardsHome prod={card} key={card.id} dispach={dispach} />
   ));

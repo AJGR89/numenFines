@@ -5,11 +5,7 @@ import ShoppingCart from "../components/ShoppingCart";
 const Products = ({ mostrarModal }) => {
   return (
     <>
-<<<<<<< HEAD
-      <ProductGrid/>
-=======
       <ProductGrid mostrarModal={mostrarModal} />
->>>>>>> main
     </>
   );
 };
