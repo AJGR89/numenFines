@@ -68,7 +68,7 @@ const NavBar = () => {
               Search
             </Link>
             <Link
-              to="/Products"
+              to="/cart"
               className="mx-2 text-xl text-center hover:font-bold sm:hidden hover:underline"
             >
               Shopping Cart
@@ -88,7 +88,7 @@ const NavBar = () => {
                 <path d="M18.9,16.776A10.539,10.539,0,1,0,16.776,18.9l5.1,5.1L24,21.88ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.507,7.507,0,0,1,10.5,18Z" />
               </svg>
             </Link>
-            <Link to="/carrito">
+            <Link to="/cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="Isolation_Mode"

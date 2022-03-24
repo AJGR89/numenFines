@@ -1,4 +1,3 @@
-import "@material-tailwind/react/tailwind.css";
 import Alert from "./components/Alert/Alert";
 import NavBar from "./components/NavBar/NavBar";
 import Slider from "./components/Slider/Slider";
