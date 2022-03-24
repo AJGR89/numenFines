@@ -48,10 +48,12 @@ const StoreReducer = (state, action) => {
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
             ),
+            showModal: false,
           }
         : {
             ...state,
             cart: [...state.cart, { ...newItem, quantity: 1 }],
+            showModal: false,
           };
     }
     case types.removeOneToCart:
@@ -81,7 +83,7 @@ const StoreReducer = (state, action) => {
     case types.cleanCart: {
       return {
         ...state,
-        cart:[],
+        cart: [],
       };
     }
 
