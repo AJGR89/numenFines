@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ProductCard from "./ProductCard";
+import { products } from "./products";
 import NavBar from "../NavBar/NavBar";
 import ModalProd from "../Modal/ModalProd";
 import { StoreContext } from "../Store/StoreContext";
@@ -26,21 +27,6 @@ const ProductGrid = () => {
           prod={activeProduct}
         />
       </main>
-      <div>
-        <h3>Cart</h3>
-        <div>
-          {cart.map((item, index) => (
-            <CartItem key={index} data={item} deleteFromCart={deleteFromCart} />
-          ))}
-        </div>
-        <br />
-        <button onClick={() => clearCart()}>Limpiar Carrito</button>
-        <div>
-          {cart.map((item, index) => (
-            <CartItem key={index} data={item} clearCart={clearCart} />
-          ))}
-        </div>
-      </div>
     </>
   );
 };
