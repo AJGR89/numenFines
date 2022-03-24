@@ -1,9 +1,6 @@
-import { useContext } from "react";
-import { StoreContext } from "../Store/StoreContext";
+import { types } from "../Store/StoreReducer";
 
-const ProductCard = ({ prod, mostrarModal }) => {
-  const [state, dispach] = useContext(StoreContext)
-
+const ProductCard = ({ prod, dispach }) => {
   return (
     <div>
       <li className="flex flex-wrap sm:items-start items-center justify-evenly m-4 p-4 rounded-2xl border-2 sm:hover:border-purple-700 sm:hover:bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
@@ -20,7 +17,7 @@ const ProductCard = ({ prod, mostrarModal }) => {
         </div>
 
         <button
-          onClick={() => mostrarModal(prod)}
+          onClick={() => dispach({ type: types.showModal, payload: prod })}
           className="m-2 p-2 self-end border-2 sm:hover:border-fuchsia-500 rounded text-white font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
         >
           View Details

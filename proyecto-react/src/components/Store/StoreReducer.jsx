@@ -1,17 +1,22 @@
+import { products } from "../Products/products";
+
 const types = {
   showModal: "showModal",
   closeModal: "closeModal",
+  addToCart: "addToCart",
+  removeOneToCart: "removeOneToCart",
+  removeAllToCart: "removeAllToCart",
+  cleanCart: "cleanCart",
 };
 
+const prod = products;
+
 const initialStore = {
-  products: [
-    { id: 1, title: "producto #1" },
-    { id: 2, title: "producto #2" },
-  ],
+  products: prod,
 
-  cart: [{ id: 1, title: "producto #1", quantity: 1 }],
+  cart: JSON.parse(localStorage.getItem("cart")) || [],
 
-  activeProduct: { id: 2, title: "producto #2" },
+  activeProduct: JSON.parse(localStorage.getItem("activeProduct")),
   showModal: false,
 };
 
@@ -28,6 +33,58 @@ const StoreReducer = (state, action) => {
         ...state,
         showModal: false,
       };
+    case types.addToCart: {
+      let newItem = state.products.find(
+        (product) => product.id === action.payload
+      );
+
+      let itemInCart = state.cart.find((item) => item.id === newItem.id);
+
+      return itemInCart
+        ? {
+            ...state,
+            cart: state.cart.map((item) =>
+              item.id === newItem.id
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+            ),
+          }
+        : {
+            ...state,
+            cart: [...state.cart, { ...newItem, quantity: 1 }],
+          };
+    }
+    case types.removeOneToCart:
+      let itemToDelete = state.cart.find((item) => item.id === action.payload);
+
+      return itemToDelete.quantity > 1
+        ? {
+            ...state,
+            cart: state.cart.map((item) =>
+              item.id === action.payload
+                ? { ...item, quantity: item.quantity - 1 }
+                : item
+            ),
+          }
+        : {
+            ...state,
+            cart: state.cart.filter((item) => item.id !== action.payload),
+          };
+
+    case types.removeAllToCart: {
+      console.log("in TYPES.REMOVE_ALL_PRODUCT");
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.id !== action.payload),
+      };
+    }
+    case types.cleanCart: {
+      return {
+        ...state,
+        cart:[],
+      };
+    }
+
     default:
       return state;
   }

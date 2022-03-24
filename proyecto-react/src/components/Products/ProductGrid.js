@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProductCard from "./ProductCard";
 import { products } from "./products";
 import NavBar from "../NavBar/NavBar";
-import { Outlet } from "react-router-dom";
+import ModalProd from "../Modal/ModalProd";
+import { StoreContext } from "../Store/StoreContext";
 
-const ProductGrid = ({ mostrarModal }) => {
+const ProductGrid = () => {
+  const [state, dispach] = useContext(StoreContext);
+  const { showModal, activeProduct } = state;
+
   return (
     <>
       <NavBar />
@@ -14,18 +18,14 @@ const ProductGrid = ({ mostrarModal }) => {
       <main className="bg-gradient-to-r from-black via-purple-800 to-black">
         <ul className="sm:grid sm:grid-cols-2 sm:grid-rows-1 justify-evenly place-content-center gap-2 pt-2">
           {products.map((prod) => {
-            return (
-              <ProductCard
-                key={prod.id}
-                prod={prod}
-                mostrarModal={mostrarModal}
-              />
-            );
+            return <ProductCard key={prod.id} prod={prod} dispach={dispach} />;
           })}
         </ul>
-        <div>
-          <Outlet />
-        </div>
+        <ModalProd
+          showModal={showModal}
+          dispach={dispach}
+          prod={activeProduct}
+        />
       </main>
     </>
   );

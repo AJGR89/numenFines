@@ -45,7 +45,7 @@ export function shoppingReducer(state, action) {
             ...state,
             cart: state.cart.filter((item) => item.id !== action.payload),
           };
-    }
+    } 
     case TYPES.REMOVE_ALL_PRODUCT: {
       console.log("in TYPES.REMOVE_ALL_PRODUCT");
       return {

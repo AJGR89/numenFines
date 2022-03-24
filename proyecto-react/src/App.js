@@ -10,10 +10,8 @@ import Footer from "./components/Footer/Footer";
 import DataInforService from "./components/InfoService/DataInforService";
 import InfoSale from "./components/InfoCards/InfoSale";
 import InfoGraphics from "./components/InfoCards/InfoGraphics";
-import { useState } from "react";
 
-function App({ mostrarModal }) {
-  console.log(mostrarModal);
+function App() {
   return (
     <div className="font-sans">
       <Alert />
@@ -21,8 +19,8 @@ function App({ mostrarModal }) {
       <Slider />
       <Categories />
 
-      <InfoSale mostrarModal={mostrarModal} />
-      <InfoGraphics mostrarModal={mostrarModal} />
+      <InfoSale />
+      <InfoGraphics />
 
       <TextImage />
       <Brands />

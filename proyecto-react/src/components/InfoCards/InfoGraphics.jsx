@@ -2,7 +2,7 @@ import React from "react";
 import { products } from "../Products/products";
 import InfoCards from "./InfoCards";
 
-const InfoGraphics = ({ mostrarModal }) => {
+const InfoGraphics = () => {
   const productsLatest = products.filter((prod) => prod.id > 6);
   return (
     <>
@@ -10,7 +10,6 @@ const InfoGraphics = ({ mostrarModal }) => {
         textWhite="Latest in "
         textViolet="Graphics Cards"
         pictures={productsLatest}
-        mostrarModal={mostrarModal}
       />
     </>
   );
