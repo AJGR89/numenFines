@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { products } from "../Products/products";
 import InfoCards from "./InfoCards";
 
@@ -12,9 +11,6 @@ const InfoGraphics = () => {
         textViolet="Graphics Cards"
         pictures={productsLatest}
       />
-      <div>
-        <Outlet />
-      </div>
     </>
   );
 };

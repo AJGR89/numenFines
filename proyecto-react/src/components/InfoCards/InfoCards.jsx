@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import ModalProd from "../Modal/ModalProd";
+import { StoreContext } from "../Store/StoreContext";
 import CardsHome from "./CardsHome";
 
+<<<<<<< HEAD
 const InfoCards = ({ pictures, textWhite, textViolet,addToCart }) => {
+=======
+const InfoCards = ({ pictures, textWhite, textViolet }) => {
+  const [state, dispach] = useContext(StoreContext);
+  const { showModal, activeProduct } = state;
+
+>>>>>>> main
   const tarjetas = pictures.map((card) => (
-    <CardsHome prod={card} key={card.id} />
+    <CardsHome prod={card} key={card.id} dispach={dispach} />
   ));
 
   return (
@@ -18,6 +27,7 @@ const InfoCards = ({ pictures, textWhite, textViolet,addToCart }) => {
         {" "}
         {tarjetas}{" "}
       </div>
+      <ModalProd showModal={showModal} dispach={dispach} prod={activeProduct} />
     </>
   );
 };

@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import React, { useReducer } from "react";
+=======
+import React, { useContext } from "react";
+>>>>>>> main
 import ProductCard from "./ProductCard";
 import NavBar from "../NavBar/NavBar";
-import { Outlet } from "react-router-dom";
+import ModalProd from "../Modal/ModalProd";
+import { StoreContext } from "../Store/StoreContext";
 
 const ProductGrid = () => {
+<<<<<<< HEAD
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
   const { products, cart } = state;
@@ -24,6 +30,10 @@ const ProductGrid = () => {
   const clearCart = () => {
     dispatch({ type: TYPES.CLEAR_CART });
   };
+=======
+  const [state, dispach] = useContext(StoreContext);
+  const { showModal, activeProduct } = state;
+>>>>>>> main
 
   return (
     <>
@@ -34,6 +44,7 @@ const ProductGrid = () => {
       <main className="bg-gradient-to-r from-black via-purple-800 to-black">
         <ul className="sm:grid sm:grid-cols-2 sm:grid-rows-1 justify-evenly place-content-center gap-2 pt-2">
           {products.map((prod) => {
+<<<<<<< HEAD
             return (
               <ProductCard
                 key={prod.id}
@@ -42,11 +53,16 @@ const ProductGrid = () => {
                 addToCart={addToCart}
               />
             );
+=======
+            return <ProductCard key={prod.id} prod={prod} dispach={dispach} />;
+>>>>>>> main
           })}
         </ul>
-        <div>
-          <Outlet />
-        </div>
+        <ModalProd
+          showModal={showModal}
+          dispach={dispach}
+          prod={activeProduct}
+        />
       </main>
       <div>
         <h3>Cart</h3>
