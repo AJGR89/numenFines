@@ -2,6 +2,8 @@ import React from "react";
 import { types } from "../Store/StoreReducer";
 
 const CartItem = ({ prod, dispache }) => {
+  let precio = prod.price * prod.quantity;
+
   return (
     <div>
       <li className="sm:flex sm:flex-wrap max-h-full justify-center sm:justify-evenly items-center content-center m-4 p-4 ml-2 font-serif">
@@ -32,7 +34,8 @@ const CartItem = ({ prod, dispache }) => {
         >
           -
         </button>
-        <h3 className="mx-28 font-bold">${prod.price}</h3>
+
+        <h3 className="mx-28 font-bold"> $ {precio} </h3>
       </li>
     </div>
   );
