@@ -10,19 +10,20 @@ const CarritoRender = () => {
   return (
     <>
       <NavBar />
-      <h1>Carrito</h1>
       <main>
-        <ul>
+        <ul className="bg-white divide-solid divide-y-2 divide-purple-700">
           {cart.map((prod) => {
             return <CartItem prod={prod} key={prod.id} dispache={dispache} />;
           })}
+        </ul>
+        <div className="flex justify-center">
           <button
             onClick={() => dispache({ type: types.cleanCart })}
-            className="m-2 p-2 self-end border-2 sm:hover:border-fuchsia-500 rounded text-white font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+            className="m-2 p-2 bg-gray-400 sm:hover:border-fuchsia-500 rounded-lg text-black font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
           >
-            Clean Cart
+            Clear All
           </button>
-        </ul>
+        </div>
       </main>
     </>
   );
