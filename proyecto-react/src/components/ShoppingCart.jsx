@@ -8,10 +8,7 @@ import Product from "./Product";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
-  const [state, dispatch] = useReducer(
-    shoppingReducer,
-    shoppingInitialState
-  );
+  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
   const { products, cart } = state;
 
@@ -22,7 +19,7 @@ const ShoppingCart = () => {
 
   const deleteFromCart = (id, all = false) => {
     if (all) {
-      dispatch({ type: TYPES.REMOVE_ALL_PRODUCT, payload: id});
+      dispatch({ type: TYPES.REMOVE_ALL_PRODUCT, payload: id });
     } else {
       dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
     }
@@ -48,7 +45,7 @@ const ShoppingCart = () => {
         ))}
       </div>
       <br />
-      <button onClick={()=> clearCart()} >Limpiar Carrito</button>
+      <button onClick={() => clearCart()}>Limpiar Carrito</button>
       <div>
         {cart.map((item, index) => (
           <CartItem key={index} data={item} clearCart={clearCart} />

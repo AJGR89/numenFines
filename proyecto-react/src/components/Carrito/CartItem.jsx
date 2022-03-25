@@ -4,31 +4,35 @@ import { types } from "../Store/StoreReducer";
 const CartItem = ({ prod, dispache }) => {
   return (
     <div>
-      <li>
-        <h1>{prod.title}</h1>
-        <h3>quantity {prod.quantity}</h3>
+      <li className="sm:flex sm:flex-wrap max-h-full justify-center sm:justify-evenly items-center content-center m-4 p-4 ml-2 font-serif">
+        <img className="sm:h-28 sm:w-50" src={prod.img} alt="images" />
+        <div className="sm:mx-8 mx-0">
+          <h1 className="sm:mb-4 mb-8 text-center">{prod.title}</h1>
+          <button
+            onClick={() =>
+              dispache({ type: types.removeAllToCart, payload: prod.id })
+            }
+            className="sm:mx-4 p-1 border-2 bg-gray-400 sm:hover:border-fuchsia-500 rounded-lg text-black font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+          >
+            Delete
+          </button>
+        </div>
         <button
           onClick={() => dispache({ type: types.addToCart, payload: prod.id })}
-          className="m-2 p-2 self-end border-2 sm:hover:border-fuchsia-500 rounded text-white font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+          className="sm:mx-4 border-2 p-1 bg-gray-400 sm:hover:border-fuchsia-500 rounded font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
         >
-          sumar
+          +
         </button>
+        <h3 className="font-serif">{prod.quantity}</h3>
         <button
           onClick={() =>
             dispache({ type: types.removeOneToCart, payload: prod.id })
           }
-          className="m-2 p-2 self-end border-2 sm:hover:border-fuchsia-500 rounded text-white font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+          className="sm:mx-4 border-2 p-1 bg-gray-400 sm:hover:border-fuchsia-500 rounded font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
         >
-          restar
+          -
         </button>
-        <button
-          onClick={() =>
-            dispache({ type: types.removeAllToCart, payload: prod.id })
-          }
-          className="m-2 p-2 self-end border-2 sm:hover:border-fuchsia-500 rounded text-white font-serif font-bold sm:hover:bg-fuchsia-500 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
-        >
-          eliminar
-        </button>
+        <h3 className="mx-28 font-bold">${prod.price}</h3>
       </li>
     </div>
   );

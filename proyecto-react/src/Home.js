@@ -8,14 +8,14 @@ import Products from "./Pages/Products";
 const Home = () => {
   return (
     <Router>
-        <StoreProvider>
-      <Routes>
+      <StoreProvider>
+        <Routes>
           <Route path="/" element={<App classname="bg-stone-900" />}></Route>
           <Route path="/products" element={<Products />}></Route>
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/cart" element={<Cart />} />
-      </Routes>
-        </StoreProvider>
+        </Routes>
+      </StoreProvider>
     </Router>
   );
 };
