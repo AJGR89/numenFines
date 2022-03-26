@@ -22,6 +22,11 @@ module.exports = {
         121: "35rem",
         122: "32rem",
       },
+      fontFamily: {
+        PoiretOne: ["Poiret One"],
+        monserratAlt: ["Montserrat Alternates"],
+        urbanist: ["Urbanist"],
+      },
     },
   },
   plugins: [],

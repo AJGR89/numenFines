@@ -22,16 +22,16 @@ const NavBar = () => {
     };
   });
   return (
-    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-serif z-50 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500">
-      <div className="flex items-center mx-2">
+    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-light font-monserratAlt z-50 bg-zinc-900 bg-opacity-80 ">
+      <div className="flex items-center mx-2 ">
         <a href="/">
           <img
             className="h-10 m-2 rounded-full border-cyan"
-            src="https://p4.wallpaperbetter.com/wallpaper/975/1021/255/asus-rog-neon-logo-4k-wallpaper-preview.jpg"
-            alt="logo asus"
+            src="../assets/images/navbar/logo.png"
+            alt="logo"
           ></img>
         </a>
-        <p className="text-2xl font-bold text-black">GoldWar</p>
+        <p className="text-2xl font-bold text-fuchsia-900	">Gold War</p>
       </div>
       <div className="flex flex-grow flex-row-reverse mr-4 sm:hidden">
         <button
