@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { StoreContext } from "../Store/StoreContext";
 
 const NavBar = () => {
-  const [state, dispache] = useContext(StoreContext);
+  const [state] = useContext(StoreContext);
   const { cart } = state;
   let count = cart.length;
   const [visible, setVisible] = useState(true);
@@ -22,16 +22,11 @@ const NavBar = () => {
     };
   });
   return (
-    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-light font-monserratAlt z-50 bg-zinc-900 bg-opacity-80 ">
-      <div className="flex items-center mx-2 ">
+    <nav className="flex flex-wrap sticky top-0 items-center gap-2 text-white font-light font-monserratAlt z-50 bg-zinc-900 bg-opacity-80">
+      <div className="flex items-center mx-2 h-10 m-2">
         <a href="/">
-          <img
-            className="h-10 m-2 rounded-full border-cyan"
-            src="../assets/images/navbar/logo.png"
-            alt="logo"
-          ></img>
+          <p className="text-2xl font-bold text-fuchsia-900	">Gold War</p>
         </a>
-        <p className="text-2xl font-bold text-fuchsia-900	">Gold War</p>
       </div>
       <div className="flex flex-grow flex-row-reverse mr-4 sm:hidden">
         <button

@@ -1,9 +1,9 @@
 import React from "react";
-import CarritoRender from "../components/Carrito/CarritoRender";
+import CartRender from "../components/Cart/CartRender";
 const Cart = () => {
   return (
     <div>
-      <CarritoRender />
+      <CartRender />
     </div>
   );
 };
