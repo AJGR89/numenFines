@@ -13,6 +13,7 @@ module.exports = {
         "fondo-img": "url('/src/assets/images/footer/hexagons.jpg')",
         "fondosm-img": "url('/src/assets/images/footer/abstracto.jpg')",
         "colors-img": "url('/src/assets/images/carousel/colors.jpg')",
+        "logo-img": "url('/src/assets/images/navbar/logo.png')",
       },
       spacing: {
         46: "11.5rem",
