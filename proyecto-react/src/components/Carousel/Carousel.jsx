@@ -13,7 +13,7 @@ export default function Slider() {
       <Card prop={el}></Card>
     </SwiperSlide>
   ));
-  console.log("slideArray", slideArray);
+  // console.log("slideArray", slideArray);
   return (
     <>
       <Swiper

@@ -12,7 +12,7 @@ export default function Slider() {
       <img src={el.url} alt={el.alt} className="h-20 w-full sm:h-36" />{" "}
     </SwiperSlide>
   ));
-  console.log("slideArray", slideArray);
+  // console.log("slideArray", slideArray);
   return (
     <>
       <Swiper

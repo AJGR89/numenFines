@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { types } from "../Store/StoreReducer";
 import * as styles from "./Styles";
 const CardsHome = ({ prod, dispach }) => {
-  console.log("CardsHome");
   return (
     <div className={styles.MAIN_CONTAINER}>
       <Link to="/Products">

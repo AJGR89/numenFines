@@ -17,7 +17,7 @@ export default function Slider() {
       />{" "}
     </SwiperSlide>
   ));
-  console.log("slideArray", slideArray);
+  // console.log("slideArray", slideArray);
   return (
     <>
       <Swiper
