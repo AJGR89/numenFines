@@ -2,7 +2,7 @@ import React from "react";
 import { types } from "../Store/StoreReducer";
 
 const ModalProd = ({ showModal, dispach, prod }) => {
-  console.log(prod);
+  // console.log(prod);
   return (
     <>
       {showModal ? (

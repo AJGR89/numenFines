@@ -74,7 +74,7 @@ const StoreReducer = (state, action) => {
           };
 
     case types.removeAllToCart: {
-      console.log("in TYPES.REMOVE_ALL_PRODUCT");
+      // console.log("in TYPES.REMOVE_ALL_PRODUCT");
       return {
         ...state,
         cart: state.cart.filter((item) => item.id !== action.payload),
