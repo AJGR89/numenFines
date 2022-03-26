@@ -23,7 +23,7 @@ const CardsHome = ({ prod, dispach }) => {
 
       <button
         onClick={() => dispach({ type: types.showModal, payload: prod })}
-        className="bg-gradient-to-r from-purple-500 to-black sm:border-4 sm:border-fuchsia-800 text-white font-serif m-2 py-2 rounded sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
+        className="bg-gradient-to-r from-purple-500 to-violet-500 text-white m-2 py-2 rounded sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300"
       >
         view details
       </button>

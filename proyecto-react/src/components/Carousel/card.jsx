@@ -8,9 +8,8 @@ function Card({ prop }) {
       className="
         flex flex-wrap
         sm:justify-evenly justify-center
-        sm:bg-contain bg-no-repeat bg-colors-img sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:hover:bg-blend-hard-light sm:duration-300
+        sm:bg-contain bg-no-repeat bg-colors-img
         sm:bg-slate-300 p-4 sm:w-56 sm:h-60 w-full h-37
-        sm:drop-shadow-md
         sm:rounded-md
         "
     >

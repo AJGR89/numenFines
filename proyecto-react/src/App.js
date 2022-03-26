@@ -12,7 +12,7 @@ import InfoGraphics from "./components/InfoCards/InfoGraphics";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-urbanist">
       <Alert />
       <NavBar />
       <Slider />

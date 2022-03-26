@@ -4,7 +4,7 @@ const TextAndImage = () => {
   return (
     <div className="sm:grid sm:grid-cols-2 sm:grid-rows-1 text-white place-content-center gap-8 pt-8">
       <div className="sm:text-right sm:place-self-end mx-4 sm:mx-0">
-        <h1 className="text-2xl sm:text-3xl text-center font-bold">
+        <h1 className="text-2xl sm:text-3xl text-center font-Urbanist">
           Intel® Iris® Xe MAX Graphics
         </h1>
         <p className="sm:text-right text-justify h-48 w-full sm:h-80 sm:w-120 sm:text-lg mt-4">

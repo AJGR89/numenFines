@@ -34,11 +34,8 @@ export default function Slider() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
         navigation={false}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         className="mySwiper bg-contain bg-gradient-to-r from-purple-700 via-fuchsia-500 to-purple-500 sm:mt-4 sm:mb-4 mt-8 sm:mx-28 sm:rounded-2xl"
       >
         {slideArray}

@@ -13,7 +13,7 @@ export const products = [
   {
     id: 1,
     title: "Keyboard Corsair",
-    descShort: "Amount: 5",
+    descShort: "stock: 5",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 40000.0,
     img: picture1,
@@ -21,7 +21,7 @@ export const products = [
   {
     id: 2,
     title: "Pad RGB",
-    descShort: "Amount: 10",
+    descShort: "stock: 10",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 30000.0,
     img: picture2,
@@ -29,7 +29,7 @@ export const products = [
   {
     id: 3,
     title: "Screen Gigabyte",
-    descShort: "Amount: 20",
+    descShort: "stock: 20",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 85000.0,
     img: picture3,
@@ -37,7 +37,7 @@ export const products = [
   {
     id: 4,
     title: "Source 80 Plus",
-    descShort: "Amount: 30",
+    descShort: "stock: 30",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 45000.0,
     img: picture4,
@@ -45,7 +45,7 @@ export const products = [
   {
     id: 5,
     title: "Product 5",
-    descShort: "Amount: 40",
+    descShort: "stock: 40",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 750000.0,
     img: url_img5,
@@ -53,7 +53,7 @@ export const products = [
   {
     id: 6,
     title: "Producto 6",
-    descShort: "Amount: 70",
+    descShort: "stock: 70",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 500000.0,
     img: url_img6,
@@ -61,7 +61,7 @@ export const products = [
   {
     id: 7,
     title: "Aorus 3070 TI",
-    descShort: "Amount: 90",
+    descShort: "stock: 90",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 650000.0,
     img: graphics1,
@@ -69,7 +69,7 @@ export const products = [
   {
     id: 8,
     title: "MSI 3070 TI",
-    descShort: "Amount: 110",
+    descShort: "stock: 110",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 750000.0,
     img: graphics2,
@@ -77,7 +77,7 @@ export const products = [
   {
     id: 9,
     title: "EVGA 3070 TI",
-    descShort: "Amount: 150",
+    descShort: "stock: 150",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 800000.0,
     img: graphics3,
@@ -85,7 +85,7 @@ export const products = [
   {
     id: 10,
     title: "Asus ROG 3090",
-    descShort: "Amount: 190",
+    descShort: "stock: 190",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis voluptatum, aspernatur repellat non esse laborum omnis similique est ab!",
     price: 900000.0,
     img: graphics4,

@@ -13,13 +13,13 @@ const InfoCards = ({ pictures, textWhite, textViolet }) => {
 
   return (
     <>
-      <h1 className="text-4xl text-center mt-4 font-serif text-white">
+      <h1 className="text-4xl text-center mt-4 font-light font-Urbanist text-white">
         {textWhite}{" "}
-        <span className="text-4xl text-center font-serif text-violet-900">
+        <span className="text-4xl text-center font-semibold font-Urbanist text-violet-900">
           {textViolet}
         </span>
       </h1>
-      <div className="flex flex-wrap font-serif justify-center gap-4">
+      <div className="flex flex-wrap font-Urbanist justify-center gap-4">
         {" "}
         {tarjetas}{" "}
       </div>

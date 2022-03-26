@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
-    <div className="flex flex-wrap gap-1 justify-center sm:my-8">
+    <div className="flex flex-wrap gap-1 justify-center sm:my-8 font-Urbanist">
       <Link
         to="/Products"
         className="flex justify-end sm:rounded-3xl bg-leds-img w-full sm:mx-4 h-47 sm:w-48 sm:h-96 bg-cover bg-center  sm:ease-in-out sm:delay-80 sm:hover:-translate-y-1 sm:hover:scale-110 sm:duration-300"
